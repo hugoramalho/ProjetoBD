@@ -47,7 +47,7 @@ Link para o resto do rascunho: https://drive.google.com/file/d/0B_bEaoHOwgzEQnQ5
 
 ### 5.MODELO CONCEITUAL<br>
     A) NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://raw.githubusercontent.com/BCLL-CantinaIFES/trab01/master/bcll%20mapa%20foto.PNG)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/modelo_conceitual.jpg?raw=true)
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
