@@ -1,5 +1,5 @@
 # TRABALHO 01: EVASÃO E AUTOMAÇÃO ASSISTÊNCIA ESTUDANTIL
-Trabalho com objetivo de avaliação da disciplina de banco de dados 1, do Insitituto Federal do Espirito Santo.
+Trabalho com objetivo de avaliação da disciplina de banco de dados 1, do Insitituto Federal do Espirito Santo - Campus Serra.
 
 # Sumário
 
@@ -12,8 +12,7 @@ Paulo Ricardo Viana Ferreira: paulo_ricardosf@outlook.com<br>
 
 ### 2.INTRODUÇÃO E MOTIVAÇAO<br>
 Este documento contém a especificação do projeto de banco de dados "EVASÃO E AUTOMAÇÃO ASSISTÊNCIA ESTUDANTIL".
-O trabalho visa mapear as principais dificuldades dos alunos e também, amenizar o processo de inscrição da assistência estudantil.  
-<br>e motivação da escolha realizada. <br>
+O trabalho visa mapear as principais dificuldades dos alunos e também, amenizar o processo de inscrição da assistência estudantil.<br>
 
 ### 3.MINI-MUNDO<br>
 
