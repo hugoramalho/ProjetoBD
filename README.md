@@ -34,7 +34,7 @@ O Projeto visa também eliminar de vez os papeis da assistência estudantil. Vis
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
 
-Link para o resto do rascunho: https://drive.google.com/file/d/0B_bEaoHOwgzEQnQ5cW1jMFFuV0k/view?usp=sharing<br>
+Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob/master/balsamiq.pdf<br>
 
 ![Alt text](https://github.com/BCLL-CantinaIFES/trab01/blob/master/fotoBalsa.png)
 
