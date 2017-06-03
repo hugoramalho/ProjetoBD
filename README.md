@@ -70,8 +70,129 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
     [objeto]: [descrição do objeto]
     
     EXEMPLO:
-    CLIENTE: Tabela que armazena as informações relativas ao cliente<br>
-    CPF: campo que armazena o número de Cadastro de Pessoa Física para cada cliente da empresa.<br>
+    TABELA ALUNO - Tabela que armazena o aluno e matricula
+TABELA ALUNO - Tabela que armazena o aluno e matricula<br>
+( 
+    MATRICULA - Armazena a Matricula do Aluno da Instituição
+    NOME Armazena o Nome do Aluno Matriculado Na Instituição
+);<br>
+TABELA  TIPO_DOCUMENTOS - Tabela que armazena os tipos de documentos em geral.<br>
+(
+    ID - Armazena o ID para futuras seleções
+    TIPO_DOCUMENTO - Armazena os tipos de documento como ex: Identidade, CPF
+);<br>
+TABELA  DOCUMENTOS - Tabela que Armazena o núemro do documento fornecido<br>
+(
+    ID -  Armazena o ID para futuras seleções
+	NUMERO_DOCUMENTO - Armazena o número do documento informado pelo usuario
+	FK_DOCUMENTACAO - Armazena dados para futuras seleções
+	FK_ALUNO - Armazena dados para futuras seleções
+);<br>
+
+TABELA  DATA_NASCIMENTO - Tabela que armazena datas de nascimento<br>
+(
+	ID - Armazena dados para futuras seleções
+	DATA_NASCIMENTO - Armazena a data de nascimento do aluno
+	FK_ALUNO - Armazena dados para futuras seleções
+);<br>
+TABELA  CONTATOS - Tabela que armazena contatos em geral.<br>
+(
+	CODIGO - Armazena dados para futuras seleções
+	DESCRICAO_CONTATO - Armaenza a descrição do contado.
+);<br>
+TABELA  TIPO_CONTATO  - Tabela que armazena os tipos de contatos.<br>
+(
+	CODIGO - Armazena dados para futuras seleções
+	DESCRICAO VARCHAR(60) - Armazena E-mails, Telefones etc.
+);<br>
+TABELA  FAMILIARES_ALUNO Tabela que armazena os familiares do aluno -- entrara tabela pessoas <br>
+(
+	ID - Armazena dados para futuras seleções
+	NOME_FAMILIAR - Armazena o nome do familiar do aluno
+	GRAU_PARENTESCO - Armazena o grau parentesco
+	VINCULO_EMPREGATICIO - Armazena se ha ou não trabalho.
+	RENDA_MENSAL - Armazena Salario Mensal do Referido.
+	IDENTIDADE - Armazena o  documento de identidade.
+	FK_ALUNO - Armazena dados para futuras seleções
+);<br>
+TABELA  ESTADO<br>
+(
+	CODIGO_ESTADO - Armazena dados para futuras seleções
+	NOME_ESTADO - Armazena o nome do estado.
+);<br>
+TABELA  CIDADE<br>
+(
+	CODIGO_CIDADE - Armazena dados para futuras seleções
+	CIDADE Armazena o nome da cidade.
+	CODIGO_ESTADO - Armazena dados para futuras seleções
+);<br>
+TABELA  BAIRRO<br>
+(
+	CODIGO_BAIRRO - Armazena dados para futuras seleções
+	NOME_BAIRRO Armazena o nome do Bairro.
+	CODIGO_CIDADE - Armazena dados para futuras seleções
+);<br>
+TABELA  RUA <br>
+(
+	CODIGO_RUA - Armazena dados para futuras seleções
+	NOME_RUA - Armazena o nome da rua.
+	CODIGO_BAIRRO - Armazena dados para futuras seleções
+);<br>
+TABELA  AUXILIO<br>
+(
+	CODIGO_AUXILIO - Armazena dados para futuras seleções
+	MODALIDADE - Armazena as modalidades do auxilio: Ex Alimentação, transporte e didatico.
+	FK_ALUNO - Armazena dados para futuras seleções
+);<br>
+TABELA  TIPO_AUXILIO<br>
+(
+	ID - Armazena dados para futuras seleções
+	TIPO Armazena os tipos de auxilios que foram descritos. 
+);<br>
+TABELA  MODALIDADE_AUXILIOS<br>
+(
+	ID - Armazena dados para futuras seleções
+	TIPO Armazena os subtipos de auxilios.
+	DESCRICAO - Armazena a descrição de tais subtipos de auxilios. 
+	FK_TIPO_AUXILIO - Armazena dados para futuras seleções
+);<br>
+TABELA  DOCUMENTOS_COMPROBATORIOS<br>
+(
+	MATRICULA Armazena a Matricula do Aluno da Instituição
+	DOCUMENTACAO BLOB - Armaenza os anexos de documentações em pdf.
+);<br>
+TABELA  EVASAO_QUADRO_DIFICULDADES<br>
+(
+	MATRICULA - Armazena a Matricula do Aluno da Instituição,
+	HORA_INICIO - Armazena a Hora de Inicio/ Fim de Tal Atividade,
+	HORA_FIM - Armazena a Hora de Inicio/ Fim de Tal Atividade,
+	DIA_SEMANA - Armazena o dia da semana em que houve tal atividade,
+	ATIVIDADE - Armazena atividaes que o aluno faz, Sera criada tabela de atividades 
+);<br>
+TABELA  DISCIPLINAS<br>
+(
+    DISCPLINA - Armazena as discplinas que o aluno cursa. 
+);<br>
+TABELA  EVASAO_DIFICULDADES<br>
+(
+	MATRICULA  - Armazena a Matricula do Aluno da Instituição,
+	DISCIPLINA - Armazena as discplinas que o aluno cursa. 
+	DIFICULDADES- Armazena dificuldades que o aluno possui. - Sera Criada Uma tabela de Dificuldades
+);<br>
+TABELA  ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA<br>
+(
+	MATRICULA  - Armazena a Matricula do Aluno da Instituição,
+);<br>
+
+TABELA  ALUNOS_JA_PARTICIPANTES_ASSISTENCIA<br>
+(
+	MATRICULA  - Armazena a Matricula do Aluno da Instituição,
+);<br>
+TABELA  ALUNOS_PENDENCIAS_DOCUMENTOS<br>
+(
+	MATRICULA  - Armazena a Matricula do Aluno da Instituição,
+	DOCUMENTO_PENDENTE - Armazena matriculas de alunos com pendencias  
+);<br>
 
 
 ### 6	MODELO LÓGICO<br>
