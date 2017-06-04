@@ -42,7 +42,12 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
     (esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
     e deve ser criada antes do modelo conceitual)
     
-  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/TABELAS%20PRINCIAPIS.png?raw=true)
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/Tabelas%2001.PNG)
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/tabelas%2002.PNG)         
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/Tabelas%2003.PNG)
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/Tabelas%2004.PNG)
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/Tabelas%2005.PNG)
+  
 
 ### 5.MODELO CONCEITUAL<br>
     A) NOTACAO ENTIDADE RELACIONAMENTO
