@@ -117,41 +117,41 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 		IDENTIDADE - Armazena o  documento de identidade.
 		FK_ALUNO - Armazena dados para futuras seleções
 	)
-	TABELA  ESTADO
+	TABELA  ESTADO - Tabela que armazena os estados 
 	(
 		CODIGO_ESTADO - Armazena dados para futuras seleções
 		NOME_ESTADO - Armazena o nome do estado.
 	)
-	TABELA  CIDADE
+	TABELA  CIDADE - Tabela que armazena as cidades
 	(
 		CODIGO_CIDADE - Armazena dados para futuras seleções
 		CIDADE Armazena o nome da cidade.
 		CODIGO_ESTADO - Armazena dados para futuras seleções
 	)
-	TABELA  BAIRRO
+	TABELA  BAIRRO - Tabela que armazena os bairros
 	(
 		CODIGO_BAIRRO - Armazena dados para futuras seleções
 		NOME_BAIRRO Armazena o nome do Bairro.
 		CODIGO_CIDADE - Armazena dados para futuras seleções
 	)
-	TABELA  RUA 
+	TABELA  RUA - Tabela que armazena as ruas
 	(
 		CODIGO_RUA - Armazena dados para futuras seleções
 		NOME_RUA - Armazena o nome da rua.
 		CODIGO_BAIRRO - Armazena dados para futuras seleções
 	)
-	TABELA  AUXILIO
+	TABELA  AUXILIO - Armazena as modalidades dos auxilios
 	(
 		CODIGO_AUXILIO - Armazena dados para futuras seleções
 		MODALIDADE - Armazena as modalidades do auxilio: Ex Alimentação, transporte e didatico.
 		FK_ALUNO - Armazena dados para futuras seleções
 	)
-	TABELA  TIPO_AUXILIO
+	TABELA  TIPO_AUXILIO - Armazena os tipos dos auxilios a serem solicitados 
 	(
 		ID - Armazena dados para futuras seleções
 		TIPO Armazena os tipos de auxilios que foram descritos. 
 	)
-	TABELA  MODALIDADE_AUXILIOS
+	TABELA  MODALIDADE_AUXILIOS 
 	(
 		ID - Armazena dados para futuras seleções
 		TIPO Armazena os subtipos de auxilios.
