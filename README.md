@@ -1,4 +1,4 @@
-# TRABALHO 01: EVASÃO E AUTOMAÇÃO ASSISTÊNCIA ESTUDANTIL
+# TRABALHO 01 - EVASÃO E AUTOMAÇÃO ASSISTÊNCIA ESTUDANTIL
 Trabalho com objetivo de avaliação da disciplina de banco de dados 1, do Insitituto Federal do Espirito Santo - Campus Serra.
 
 # Sumário
