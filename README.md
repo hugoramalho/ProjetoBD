@@ -35,7 +35,7 @@ Neste ponto a codificação não e necessária, somente as ideias de telas devem
 
 Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob/master/balsamiq.pdf<br>
 
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/tela%201.PNG?raw=true)
+
 
 #### 4.1 TABELA DE DADOS DO SISTEMA:
     Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas.
