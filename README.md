@@ -72,131 +72,131 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 
 	Tabela TIPO_DOCUMENTOS:
 	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
-	b) Campo TIPO_DOCUMENTO: 
+	b) Campo TIPO_DOCUMENTO: No projeto, optamos por manter um campo com multiplos valores pois, tal campo recebe valores já pré estabelecidos pois não mudam constantemente.
 
 	Tabela DOCUMENTOS:
-	a) Campo ID: 
-	b) Campo NUMERO_DOCUMENTO: 
-	c) Campo FK_DOCUMENTACAO:
-	d) Campo FK_PESSOAS: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo NUMERO_DOCUMENTO: No projeto, optamos por manter um campo com multiplos valores pois, tal campo recebe valores com pontos ou traços como o caso do CPF.
+	c) Campo FK_DOCUMENTACAO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	d) Campo FK_PESSOAS: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela DATA_NASCIMENTO:
-	a) Campo ID: 
-	b) Campo DATA_NASCIMENTO: 
-	d) Campo FK_PESSOAS: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo DATA_NASCIMENTO: Campo recebe a variavel date, pois o mesmo recebera apenas valores como datas. 
+	d) Campo FK_PESSOAS: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela CONTATOS:
-	a) Campo CODIGO: 
-	b) Campo DESCRICAO_CONTATO: 
+	a) Campo CODIGO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo DESCRICAO_CONTATO: Recebe multiplos valores pois tal campo sera preenchido pelo usuário
 
 	Tabela TIPO_CONTATO:
-	a) Campo CODIGO: 
-	b) Campo DESCRICAO: 
+	a) Campo CODIGO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo DESCRICAO: Recebe multiplos valores pois tal campo sera preenchido pelo usuário.
 
 	Tabela Pessoas:
-	a) Campo ID: 
-	b) Campo Nome: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo Nome: Recebe valores de texto, pois será usado apenas para armazenar letras. 
 
 	Tabela VINCULO_EMPREGATICIO:
-	a) Campo ID:
-	b) Campo Situacao: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo Situacao: Recebe Booleano pois só precisaremos, para futuras análises se sim ou não.
 
 	Tabela RENDA_FAMILIAR:
-	a) Campo FK_PESSOAS: 
-	b) Campo FK_VINCULO_EMPREGATICIO:
-	c) Campo RENDA_MENSAL:
+	a) Campo FK_PESSOAS: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo FK_VINCULO_EMPREGATICIO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	c) Campo RENDA_MENSAL: Recebe o tipo Money por se tratar de armazenamento de valores em dinheiro. 
 
 	Tabela QUADRO_FAMILIAR:
-	a) Campo ID: 
-	b) Campo FK_PESSOAS(ALUNO): 
-	c) Campo FK_PESSOAS(FAMILIAR):
-	d) Campo GRAU_PARENENTESCO: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo FK_PESSOAS(ALUNO): Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	c) Campo FK_PESSOAS(FAMILIAR): Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	d) Campo GRAU_PARENENTESCO: Campo recebe valores multiplos pois será preenchido pelo usuário. 
 
 	Tabela ESTADO:
-	a) Campo ID: 
-	b) Campo NOME: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo NOME: Recebe valores de texto, pois será usado apenas para armazenar letras. 
 
 	Tabela CIDADE:
-	a) Campo ID: 
-	b) Campo NOME: 
-	c) Campo FK_ESTADO: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo NOME: Recebe valores de texto, pois será usado apenas para armazenar letras. 
+	c) Campo FK_ESTADO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela BAIRRO:
-	a) Campo ID: 
-	b) Campo NOME: 
-	c) Campo FK_CIDADE: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo NOME: Recebe valores de texto, pois será usado apenas para armazenar letras. 
+	c) Campo FK_CIDADE: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela CIDADE:
-	a) Campo ID: 
-	b) Campo NOME: 
-	c) Campo FK_RUA: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo NOME: Recebe valores de texto, pois será usado apenas para armazenar letras. 
+	c) Campo FK_RUA: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela AUXILIO:
-	a) Campo ID: 
-	b) Campo FK_MODALIDADE: 
-	c) Campo FK_ALUNO:
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo FK_MODALIDADE: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	c) Campo FK_ALUNO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela TIPO_DE_AUXILIO:
-	a) Campo ID: 
-	b) Campo TIPO: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo TIPO: Campo Recebe Valors Multiplos Já Estabelecidos pelos administradores, pois ira trabalhar com letras e números. 
 
 	Tabela MODALIDADE:
-	a) Campo ID: 
-	b) Campo TIPO: 
-	c) Campo DESCRICAO:
-	d) Campo FK_TIPO_DE_AUXILIO:
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo TIPO: Campo Recebe Valors Multiplos Já Estabelecidos pelos administradores, pois ira trabalhar com letras e números
+	c) Campo DESCRICAO: Campo Recebe Valors Multiplos Já Estabelecidos pelos administradores, pois ira trabalhar com letras e números
+	d) Campo FK_TIPO_DE_AUXILIO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela DOCUMENTOS_COMPROBATORIOS:
-	a) Campo MATRICULA: 
-	b) Campo DOCUMENTACAO: 
+	a) Campo MATRICULA: No projeto, optamos por manter um campo com multiplos valores pois, tal campo recebe como identificão valores como o ano/semestre/siglacurso/numeroderegistro. 
+	b) Campo DOCUMENTACAO: Campo que ira receber anexos em pdf dos documentos enviados pelos alunos. 
 
 	Tabela ATIVIDADES:
-	a) Campo ID: 
-	b) Campo TIPO_DE_ATIVIDADE:
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo TIPO_DE_ATIVIDADE: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela DETALHAMENTO_ATIVIDADE:
-	a) Campo FK_ATIVIDADE: 
-	b) Campo DESCRICAO_ATIVIDADE: 
-	c) Campo (FK-ID_HORARIO)HORA_INICIO:
-	d) Campo (FK-ID_HORARIO)HORA_FIM:
+	a) Campo FK_ATIVIDADE: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo DESCRICAO_ATIVIDADE: Campo que recebe valores multiplos pois ira ser preenchido pelo usuário.
+	c) Campo (FK-ID_HORARIO)HORA_INICIO: Campo que ira expor as horas em intervalos ja pre estabelcidos.
+	d) Campo (FK-ID_HORARIO)HORA_FIM: Campo que ira expor as horas em intervalos ja pre estabelcidos.
 
 	Tabela HORARIO:
-	a) Campo ID: 
-	b) Campo HORAS: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo HORAS: Campo recebe variavel do tipo para marcar hora de inicio/fim.
 
 	Tabela EVASAO_QUADRO_DIFICULDADES:
-	a) Campo ID: 
-	b) Campo FK_ALUNO: 
-	c) Campo FK_PESSOAS_DIA_SEMANA:
-	d) Campo FK_DETALHAMENTO_ATIVIDADE:
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo FK_ALUNO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	c) Campo FK_PESSOAS_DIA_SEMANA: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	d) Campo FK_DETALHAMENTO_ATIVIDADE: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela DIA_SEMANA:
-	a) Campo ID: 
-	b) Campo NOME: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo NOME: Campo que recebe valores de texto já pre estabelecidos.
 
 	Tabela DISCIPLINAS:
-	a) Campo ID: 
-	b) Campo NOME: 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo NOME: Campo que recebe valores de texto já pre estabelecidos.
 
 	Tabela DIFICULDADES:
-	a) Campo ID: 
-	b) Campo FK_ALUNO: 
-	c) Campo FK_DISCIPLINA:
-	d) Campo FK_DETALHAMENTO_ATIVIDADE:
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo FK_ALUNO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	c) Campo FK_DISCIPLINA: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	d) Campo FK_DETALHAMENTO_ATIVIDADE:Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela DETALHAMENTO_ATIVIDADE:
-	a) Campo ID: 
-	b) Campo DESCRICAO:  
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo DESCRICAO:  Campo que recebe valores de texto que serao digitados pelos usuários.
 
 	Tabela ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA:
-	a) Campo FK_ALUNO: 
+	a) Campo FK_ALUNO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela ALUNOS_JA_PARTICIPANTES_ASSISTENCIA:
-	a) Campo FK_ALUNO: 
+	a) Campo FK_ALUNO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela ASSISTENCIA_ALUNOS_PENDENCIA_DOCUMENTO:
-	a) Campo: FK_ALUNO:
-	b) Campo: FK_TIPO_DOCUMENTOS:
+	a) Campo: FK_ALUNO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo: FK_TIPO_DOCUMENTOS: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 
 
