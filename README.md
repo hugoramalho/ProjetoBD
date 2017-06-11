@@ -64,23 +64,149 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 DECISÕES DE PROJETO
-    [atributo]: [descrição da decisão]
+    Seguem abaixo as decisões das descrições dos dados. 
     
+    	Tabela ALUNO:
+	a) Campo MATRICULA: No projeto, optamos por manter um campo com multiplos valores pois, tal campo recebe como identificão valores como o ano/semestre/siglacurso/numeroderegistro. 
+	b) Campo FK_PESSOAS: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+
+	Tabela TIPO_DOCUMENTOS:
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo TIPO_DOCUMENTO: 
+
+	Tabela DOCUMENTOS:
+	a) Campo ID: 
+	b) Campo NUMERO_DOCUMENTO: 
+	c) Campo FK_DOCUMENTACAO:
+	d) Campo FK_PESSOAS: 
+
+	Tabela DATA_NASCIMENTO:
+	a) Campo ID: 
+	b) Campo DATA_NASCIMENTO: 
+	d) Campo FK_PESSOAS: 
+
+	Tabela CONTATOS:
+	a) Campo CODIGO: 
+	b) Campo DESCRICAO_CONTATO: 
+
+	Tabela TIPO_CONTATO:
+	a) Campo CODIGO: 
+	b) Campo DESCRICAO: 
+
+	Tabela Pessoas:
+	a) Campo ID: 
+	b) Campo Nome: 
+
+	Tabela VINCULO_EMPREGATICIO:
+	a) Campo ID:
+	b) Campo Situacao: 
+
+	Tabela RENDA_FAMILIAR:
+	a) Campo FK_PESSOAS: 
+	b) Campo FK_VINCULO_EMPREGATICIO:
+	c) Campo RENDA_MENSAL:
+
+	Tabela QUADRO_FAMILIAR:
+	a) Campo ID: 
+	b) Campo FK_PESSOAS(ALUNO): 
+	c) Campo FK_PESSOAS(FAMILIAR):
+	d) Campo GRAU_PARENENTESCO: 
+
+	Tabela ESTADO:
+	a) Campo ID: 
+	b) Campo NOME: 
+
+	Tabela CIDADE:
+	a) Campo ID: 
+	b) Campo NOME: 
+	c) Campo FK_ESTADO: 
+
+	Tabela BAIRRO:
+	a) Campo ID: 
+	b) Campo NOME: 
+	c) Campo FK_CIDADE: 
+
+	Tabela CIDADE:
+	a) Campo ID: 
+	b) Campo NOME: 
+	c) Campo FK_RUA: 
+
+	Tabela AUXILIO:
+	a) Campo ID: 
+	b) Campo FK_MODALIDADE: 
+	c) Campo FK_ALUNO:
+
+	Tabela TIPO_DE_AUXILIO:
+	a) Campo ID: 
+	b) Campo TIPO: 
+
+	Tabela MODALIDADE:
+	a) Campo ID: 
+	b) Campo TIPO: 
+	c) Campo DESCRICAO:
+	d) Campo FK_TIPO_DE_AUXILIO:
+
+	Tabela DOCUMENTOS_COMPROBATORIOS:
+	a) Campo MATRICULA: 
+	b) Campo DOCUMENTACAO: 
+
+	Tabela ATIVIDADES:
+	a) Campo ID: 
+	b) Campo TIPO_DE_ATIVIDADE:
+
+	Tabela DETALHAMENTO_ATIVIDADE:
+	a) Campo FK_ATIVIDADE: 
+	b) Campo DESCRICAO_ATIVIDADE: 
+	c) Campo (FK-ID_HORARIO)HORA_INICIO:
+	d) Campo (FK-ID_HORARIO)HORA_FIM:
+
+	Tabela HORARIO:
+	a) Campo ID: 
+	b) Campo HORAS: 
+
+	Tabela EVASAO_QUADRO_DIFICULDADES:
+	a) Campo ID: 
+	b) Campo FK_ALUNO: 
+	c) Campo FK_PESSOAS_DIA_SEMANA:
+	d) Campo FK_DETALHAMENTO_ATIVIDADE:
+
+	Tabela DIA_SEMANA:
+	a) Campo ID: 
+	b) Campo NOME: 
+
+	Tabela DISCIPLINAS:
+	a) Campo ID: 
+	b) Campo NOME: 
+
+	Tabela DIFICULDADES:
+	a) Campo ID: 
+	b) Campo FK_ALUNO: 
+	c) Campo FK_DISCIPLINA:
+	d) Campo FK_DETALHAMENTO_ATIVIDADE:
+
+	Tabela DETALHAMENTO_ATIVIDADE:
+	a) Campo ID: 
+	b) Campo DESCRICAO:  
+
+	Tabela ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA:
+	a) Campo FK_ALUNO: 
+
+	Tabela ALUNOS_JA_PARTICIPANTES_ASSISTENCIA:
+	a) Campo FK_ALUNO: 
+
+	Tabela ASSISTENCIA_ALUNOS_PENDENCIA_DOCUMENTO:
+	a) Campo: FK_ALUNO:
+	b) Campo: FK_TIPO_DOCUMENTOS:
+
+
+
+#### 5.3 DESCRIÇÃO DOS DADOS 
+
+
     Tabela Aluno:
     a) Campo Aluno: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
     pode possuir para cada departamento mais de uma localização... 
     b) Campo Nome: 
-
-#### 5.3 DESCRIÇÃO DOS DADOS 
-[atributo]: [descrição da decisão]
-    
-    Tabela Aluno:
-    a) Campo Aluno: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) Campo Nome: 
-
-#### 5.3 DESCRIÇÃO DOS DADOS 
-
     Seguem abaixo as tabelas e suas descrições:
 	
    	TABELA ALUNO - Tabela que armazena o aluno e matricula
