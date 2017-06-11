@@ -66,7 +66,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 #### 5.2 DECISÕES DE PROJETO
     Seguem abaixo as decisões das descrições dos dados. 
     
-    	Tabela ALUNO:
+    Tabela ALUNO:
 	a) Campo MATRICULA: No projeto, optamos por manter um campo com multiplos valores pois, tal campo recebe como identificão valores como o ano/semestre/siglacurso/numeroderegistro. 
 	b) Campo FK_PESSOAS: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
@@ -190,7 +190,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 
 	Tabela ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA:
 	a) Campo FK_ALUNO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
-
+      
 	Tabela ALUNOS_JA_PARTICIPANTES_ASSISTENCIA:
 	a) Campo FK_ALUNO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
