@@ -223,32 +223,32 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	b) Campo DATA_NASCIMENTO: armazena a data de nascimento da pessoa.
 	d) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 
-	Tabela CONTATOS: 
+	Tabela CONTATOS: Tabela que armazena contatos em geral
 	a) Campo CODIGO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	b) Campo DESCRICAO_CONTATO: 
+	b) Campo DESCRICAO_CONTATO: recebe a descrição do contato.
 
-	Tabela TIPO_CONTATO:
+	Tabela TIPO_CONTATO: Tabela que armazena o tipo do contato. E-mail. Telefone Etc.
 	a) Campo CODIGO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	b) Campo DESCRICAO: 
+	b) Campo DESCRICAO: Recebe a descrição do tipo.
 
-	Tabela Pessoas:
+	Tabela Pessoas: Tabela que armazena pessoas em geral.
 	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	b) Campo Nome: 
+	b) Campo Nome: Recebe o nome da pessoa.
 
-	Tabela VINCULO_EMPREGATICIO:
+	Tabela VINCULO_EMPREGATICIO: Tabela que Recebe a situação se uma pessoa está ou não trabalhando.
 	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	b) Campo Situacao: 
+	b) Campo Situacao: Diz se o ID relacionado acima está ou não trablhando.
 
-	Tabela RENDA_FAMILIAR:
+	Tabela RENDA_FAMILIAR: Tabela que armazena as pessoas e suas respectivas rendas.
 	a) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 	b) Campo FK_VINCULO_EMPREGATICIO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	c) Campo RENDA_MENSAL: 
+	c) Campo RENDA_MENSAL: Armazena o valor da renda das pessoas relacionadas acima. 
 
-	Tabela QUADRO_FAMILIAR:
+	Tabela QUADRO_FAMILIAR: Tabela que armazena as pessoas que estao relacionadas com o aluno X.
 	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	b) Campo FK_PESSOAS(ALUNO): Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	c) Campo FK_PESSOAS(FAMILIAR): Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	d) Campo GRAU_PARENENTESCO: 
+	b) Campo FK_PESSOAS(ALUNO): Armazena o valor do inteiro referente ao Aluno.
+	c) Campo FK_PESSOAS(FAMILIAR): Armazena o valor em inteiro referente a pessoa relacionada ao aluno.
+	d) Campo GRAU_PARENENTESCO: Armazena o grau parentesco em que a pessoa relacionada ao aluno está envolida.
 
 	Tabela ESTADO: Tabela que armazena estados brasileiros. 
 	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
