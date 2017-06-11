@@ -683,59 +683,94 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/contatos.JPG)
 	
 	SELECT * FROM DATA_NASCIMENTO;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/data_nascimento.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/data_nascimento.JPG)
 	
 	SELECT * FROM DETALHAMENTO_ATIVIDADE;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/detalhamento_atividade.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/detalhamento_atividade.JPG)
 	
 	SELECT * FROM DETALHAMENTO_DIFICULDADES;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/detalhamento_dificuldades.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/detalhamento_dificuldades.JPG)
 	
 	SELECT * FROM DIA_SEMANA;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/dia_semana.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/dia_semana.JPG)
 	
 	SELECT * FROM DIFICULDADES;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/dificuldades.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/dificuldades.JPG)
 	
 	SELECT * FROM DISCIPLINAS;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/disciplinas.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/disciplinas.JPG)
 	
 	SELECT * FROM DOCUMENTOS;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos.JPG)
 	
 	SELECT * FROM DOCUMENTOS_COMPROBATORIOS;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos_comprobatorios.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos_comprobatorios.JPG)
 	
 	SELECT * FROM ESTADO; 
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/estado.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/estado.JPG)
 	
 	SELECT * FROM EVASAO_QUADRO_ATIVIDADES;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/evasao_quadro_atividades.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/evasao_quadro_atividades.JPG)
 	
 	SELECT * FROM HORARIO; 
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/horario.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/horario.JPG)
 	
 	SELECT * FROM MODALIDADE_AUXILIOS;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/modalidade_auxilios.JPG)
+	
 	SELECT * FROM PARENTESCO;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/parentesco.JPG)
+	
 	SELECT * FROM PESSOAS;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/pessoas.JPG)
+	
 	SELECT * FROM QUADRO_FAMILIAR;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/quadro_familiar.JPG)
+	
 	SELECT * FROM RENDA_FAMILIAR;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/renda_familiar.JPG)
+	
 	SELECT * FROM RUA;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/rua.JPG)
+	
 	SELECT * FROM TIPO_AUXILIO;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/tipo_auxilio.JPG)
+	
 	SELECT * FROM TIPO_CONTATO;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/tipo_contato.JPG)
+	
 	SELECT * FROM TIPO_DOCUMENTOS;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/tipo_documentos.JPG)
+	
 	SELECT * FROM VINCULO_EMPREGATICIO;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/tipo_documentos.JPG)
+	
 	-------9.2------------
 	SELECT * FROM ALUNO WHERE MATRICULA=20151001;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.2.JPG)
+	
 	SELECT * FROM TIPO_AUXILIO WHERE ID=1;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2-9.2.JPG)
+	
 	SELECT * FROM RENDA_FAMILIAR WHERE RENDA_MENSAL='0';
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.2.JPG)
+	
 	-------9.3-------------
 	SELECT TIPO,DESCRICAO,FK_TIPO_AUXILIO AS TIPO_AUXILIO FROM MODALIDADE_AUXILIOS WHERE FK_TIPO_AUXILIO=1 OR FK_TIPO_AUXILIO=3;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.3.JPG)
+	
 	SELECT RENDA_MENSAL,RENDA_MENSAL*1.1 AS RENDA_MENSAL_COM_ACRESCIMO FROM RENDA_FAMILIAR;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2-9.3.JPG)
+	
 	------9.4---------------
 	SELECT NOME FROM PESSOAS WHERE NOME LIKE 'M%';
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.4.JPG)
+	
 	SELECT NOME FROM PESSOAS WHERE NOME LIKE '%SILVA%';
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2-9.4.JPG)
+	
 	SELECT NOME FROM PESSOAS WHERE NOME LIKE '_____________';
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.4.JPG)
 
 	
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
