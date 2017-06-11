@@ -655,8 +655,88 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br> Jesus Cristo 
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
         
-	select * from aluno;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/aluno.JPG)
+	SELECT * FROM ALUNO;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/aluno.JPG
+	
+	SELECT * FROM ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_interessados_participar_assistencia.JPG
+	
+	SELECT * FROM ALUNOS_JA_PARTICIPANTES_ASSISTENCIA;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_ja_participantes_assistencia.JPG
+	
+	SELECT * FROM ALUNOS_PENDENCIAS_DOCUMENTOS;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_pendencias_documentos.JPG
+	
+	SELECT * FROM ATIVIDADES;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/atividades.JPG
+	
+	SELECT * FROM AUXILIO;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/auxilio.JPG
+	
+	SELECT * FROM BAIRRO;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/bairro.JPG
+	
+	SELECT * FROM CIDADE;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/cidade.JPG
+	
+	SELECT * FROM CONTATOS;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/contatos.JPG
+	
+	SELECT * FROM DATA_NASCIMENTO;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/data_nascimento.JPG
+	
+	SELECT * FROM DETALHAMENTO_ATIVIDADE;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/detalhamento_atividade.JPG
+	
+	SELECT * FROM DETALHAMENTO_DIFICULDADES;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/detalhamento_dificuldades.JPG
+	
+	SELECT * FROM DIA_SEMANA;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/dia_semana.JPG
+	
+	SELECT * FROM DIFICULDADES;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/dificuldades.JPG
+	
+	SELECT * FROM DISCIPLINAS;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/disciplinas.JPG
+	
+	SELECT * FROM DOCUMENTOS;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos.JPG
+	
+	SELECT * FROM DOCUMENTOS_COMPROBATORIOS;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos_comprobatorios.JPG
+	
+	SELECT * FROM ESTADO; 
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/estado.JPG
+	
+	SELECT * FROM EVASAO_QUADRO_ATIVIDADES;
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/evasao_quadro_atividades.JPG
+	
+	SELECT * FROM HORARIO; 
+	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/horario.JPG
+	
+	SELECT * FROM MODALIDADE_AUXILIOS;
+	SELECT * FROM PARENTESCO;
+	SELECT * FROM PESSOAS;
+	SELECT * FROM QUADRO_FAMILIAR;
+	SELECT * FROM RENDA_FAMILIAR;
+	SELECT * FROM RUA;
+	SELECT * FROM TIPO_AUXILIO;
+	SELECT * FROM TIPO_CONTATO;
+	SELECT * FROM TIPO_DOCUMENTOS;
+	SELECT * FROM VINCULO_EMPREGATICIO;
+	-------9.2------------
+	SELECT * FROM ALUNO WHERE MATRICULA=20151001;
+	SELECT * FROM TIPO_AUXILIO WHERE ID=1;
+	SELECT * FROM RENDA_FAMILIAR WHERE RENDA_MENSAL='0';
+	-------9.3-------------
+	SELECT TIPO,DESCRICAO,FK_TIPO_AUXILIO AS TIPO_AUXILIO FROM MODALIDADE_AUXILIOS WHERE FK_TIPO_AUXILIO=1 OR FK_TIPO_AUXILIO=3;
+	SELECT RENDA_MENSAL,RENDA_MENSAL*1.1 AS RENDA_MENSAL_COM_ACRESCIMO FROM RENDA_FAMILIAR;
+	------9.4---------------
+	SELECT NOME FROM PESSOAS WHERE NOME LIKE 'M%';
+	SELECT NOME FROM PESSOAS WHERE NOME LIKE '%SILVA%';
+	SELECT NOME FROM PESSOAS WHERE NOME LIKE '_____________';
+
 	
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
