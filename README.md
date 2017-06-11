@@ -654,33 +654,33 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br> Jesus Cristo 
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
-        
+
 	SELECT * FROM ALUNO;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/aluno.JPG
-	
-	SELECT * FROM ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_interessados_participar_assistencia.JPG
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/aluno.JPG)
+  
+  	SELECT * FROM ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA;
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_interessados_participar_assistencia.JPG)
 	
 	SELECT * FROM ALUNOS_JA_PARTICIPANTES_ASSISTENCIA;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_ja_participantes_assistencia.JPG
-	
-	SELECT * FROM ALUNOS_PENDENCIAS_DOCUMENTOS;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_pendencias_documentos.JPG
-	
-	SELECT * FROM ATIVIDADES;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/atividades.JPG
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_ja_participantes_assistencia.JPG)
+  
+  	SELECT * FROM ALUNOS_PENDENCIAS_DOCUMENTOS;
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_pendencias_documentos.JPG)
+  
+  	SELECT * FROM ATIVIDADES;
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/atividades.JPG)
 	
 	SELECT * FROM AUXILIO;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/auxilio.JPG
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/auxilio.JPG)
 	
 	SELECT * FROM BAIRRO;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/bairro.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/bairro.JPG)
 	
 	SELECT * FROM CIDADE;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/cidade.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/cidade.JPG)
 	
 	SELECT * FROM CONTATOS;
-	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/contatos.JPG
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/contatos.JPG)
 	
 	SELECT * FROM DATA_NASCIMENTO;
 	https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/data_nascimento.JPG
