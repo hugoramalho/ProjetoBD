@@ -635,6 +635,8 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 ### 9	TABELAS E PRINCIPAIS CONSULTAS<br> Jesus Cristo 
 #### 9.1	CONSULTAS DAS TABELAS COM TODOS OS DADOS INSERIDOS (Todas) <br>
         Entrega até este ponto em: (Data a ser definida)
+	   select * from aluno;
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/aluno.JPG)
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
 #### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
 #### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3) <br>
