@@ -202,114 +202,140 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 
 #### 5.3 DESCRIÇÃO DOS DADOS 
 
+	
+    Seguem abaixo a descrição dos dados: 
+	Tabela ALUNO: Armazena a matricula e a relacao com a tabela de pessoas que o aluno possui.
+	a) Campo MATRICULA: Armazena a Matricula do Aluno da Instituição.
+	b) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 
-    Tabela Aluno:
-    a) Campo Aluno: em nosso projeto optamos por um campo multivalorado e composto, pois a empresa 
-    pode possuir para cada departamento mais de uma localização... 
-    b) Campo Nome: 
-    Seguem abaixo as tabelas e suas descrições:
-	
-   	TABELA ALUNO - Tabela que armazena o aluno e matricula
-		MATRICULA - Armazena a Matricula do Aluno da Instituição.
-		NOME - Armazena o Nome do Aluno Matriculado Na Instituição.
-		
-	TABELA  TIPO_DOCUMENTOS - Tabela que armazena os tipos de documentos em geral.
-		ID - Armazena o ID para futuras seleções
-		TIPO_DOCUMENTO - Armazena os tipos de documento como ex: Identidade, CPF, Entre outros.
-		
-	TABELA  DOCUMENTOS - Tabela que Armazena o núemro do documento fornecido
-		ID -  Armazena o ID para futuras seleções
-		NUMERO_DOCUMENTO - Armazena o número do documento informado pelo usuario
-		FK_DOCUMENTACAO - Armazena dados para futuras seleções
-		FK_ALUNO - Armazena dados para futuras seleções
+	Tabela TIPO_DOCUMENTOS: Tabela que armazena os tipos de documentos em geral. 
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo TIPO_DOCUMENTO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 
-	TABELA  DATA_NASCIMENTO - Tabela que armazena datas de nascimento
-		ID - Armazena dados para futuras seleções
-		DATA_NASCIMENTO - Armazena a data de nascimento do aluno
-		FK_ALUNO - Armazena dados para futuras seleções
-		
-	TABELA  CONTATOS - Tabela que armazena contatos em geral.
-		CODIGO - Armazena dados para futuras seleções
-		DESCRICAO_CONTATO - Armaenza a descrição do contado.
-	
-	TABELA  TIPO_CONTATO  - Tabela que armazena os tipos de contatos.
-		CODIGO - Armazena dados para futuras seleções
-		DESCRICAO VARCHAR(60) - Armazena E-mails, Telefones etc.
-	
-	TABELA  FAMILIARES_ALUNO Tabela que armazena os familiares do aluno -- entrara tabela pessoas 
-		ID - Armazena dados para futuras seleções
-		NOME_FAMILIAR - Armazena o nome do familiar do aluno
-		GRAU_PARENTESCO - Armazena o grau parentesco
-		VINCULO_EMPREGATICIO - Armazena se ha ou não trabalho.
-		RENDA_MENSAL - Armazena Salario Mensal do Referido.
-		IDENTIDADE - Armazena o  documento de identidade.
-		FK_ALUNO - Armazena dados para futuras seleções
+	Tabela DOCUMENTOS:  Tabela que Armazena o núemro do documento fornecido pelo usuário.
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo NUMERO_DOCUMENTO: Armazena o número do documento informado pelo usuário.
+	c) Campo FK_DOCUMENTACAO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	d) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 
-	TABELA  ESTADO - Tabela que armazena os estados 
-		CODIGO_ESTADO - Armazena dados para futuras seleções
-		NOME_ESTADO - Armazena o nome do estado.
+	Tabela DATA_NASCIMENTO: Tabela que armazena datas de nascimentos diversas. 
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo DATA_NASCIMENTO: armazena a data de nascimento da pessoa.
+	d) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 
-	TABELA  CIDADE - Tabela que armazena as cidades
-		CODIGO_CIDADE - Armazena dados para futuras seleções
-		CIDADE Armazena o nome da cidade.
-		CODIGO_ESTADO - Armazena dados para futuras seleções
-	
-	TABELA  BAIRRO - Tabela que armazena os bairros
-		CODIGO_BAIRRO - Armazena dados para futuras seleções
-		NOME_BAIRRO Armazena o nome do Bairro.
-		CODIGO_CIDADE - Armazena dados para futuras seleções
-	
-	TABELA  RUA - Tabela que armazena as ruas
-		CODIGO_RUA - Armazena dados para futuras seleções
-		NOME_RUA - Armazena o nome da rua.
-		CODIGO_BAIRRO - Armazena dados para futuras seleções
-	
-	TABELA  AUXILIO - Armazena as modalidades dos auxilios 
-		CODIGO_AUXILIO - Armazena dados para futuras seleções
-		MODALIDADE - Armazena as modalidades do auxilio: Ex Alimentação, transporte e didatico.
-		FK_ALUNO - Armazena dados para futuras seleções
-	
-	TABELA  TIPO_AUXILIO - Armazena os tipos dos auxilios a serem solicitados 
-		ID - Armazena dados para futuras seleções
-		TIPO - Armazena os tipos de auxilios que foram descritos. 
-	
-	TABELA  MODALIDADE_AUXILIOS - Tabela que armazena as modalidades que o aluno podera escolher do auxilio
-		ID - Armazena dados para futuras seleções
-		TIPO Armazena os subtipos de auxilios.
-		DESCRICAO - Armazena a descrição de tais subtipos de auxilios. 
-		FK_TIPO_AUXILIO - Armazena dados para futuras seleções
-	
-	TABELA  DOCUMENTOS_COMPROBATORIOS - Tabela que armazena os documentos anexados para analises dos gestores
-		MATRICULA Armazena a Matricula do Aluno da Instituição
-		DOCUMENTACAO BLOB - Armaenza os anexos de documentações em pdf.
-	
-	TABELA  EVASAO_QUADRO_DIFICULDADES - Tabela que armazena a rotina de cada aluno.
-		MATRICULA - Armazena a Matricula do Aluno da Instituição,
-		HORA_INICIO - Armazena a Hora de Inicio/ Fim de Tal Atividade,
-		HORA_FIM - Armazena a Hora de Inicio/ Fim de Tal Atividade,
-		DIA_SEMANA - Armazena o dia da semana em que houve tal atividade,
-		ATIVIDADE - Armazena atividaes que o aluno faz, Sera criada tabela de atividades 
+	Tabela CONTATOS: 
+	a) Campo CODIGO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo DESCRICAO_CONTATO: 
 
-	TABELA  DISCIPLINAS - Tabela que armazena todas as disciplinas do curso. 
-		DISCPLINA - Armazena as discplinas que o aluno cursa. 
-	
-	TABELA  EVASAO_DIFICULDADES - Tabela que armazena as dificuldades do aluno 
-		MATRICULA  - Armazena a Matricula do Aluno da Instituição,
-		DISCIPLINA - Armazena as discplinas que o aluno cursa. 
-		DIFICULDADES- Armazena dificuldades que o aluno possui. - Sera Criada Uma tabela de Dificuldades
-	
-	TABELA  ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA - Tabela que armazena uma lista com alunos que tem interesse em participar da assistencia
-		MATRICULA  - Armazena a Matricula do Aluno da Instituição,
+	Tabela TIPO_CONTATO:
+	a) Campo CODIGO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo DESCRICAO: 
 
-	TABELA  ALUNOS_JA_PARTICIPANTES_ASSISTENCIA - Tabela que armazena uma lista com alunos que ja participam da assistencia 
-		MATRICULA  - Armazena a Matricula do Aluno da Instituição,
-		
-	TABELA  ALUNOS_PENDENCIAS_DOCUMENTOS - Tabela que armazena uma lista com alunos que possuem pendencia com o setor. 
-		MATRICULA  - Armazena a Matricula do Aluno da Instituição,
-		DOCUMENTO_PENDENTE - Armazena matriculas de alunos com pendencias  
+	Tabela Pessoas:
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo Nome: 
+
+	Tabela VINCULO_EMPREGATICIO:
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo Situacao: 
+
+	Tabela RENDA_FAMILIAR:
+	a) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo FK_VINCULO_EMPREGATICIO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	c) Campo RENDA_MENSAL: 
+
+	Tabela QUADRO_FAMILIAR:
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo FK_PESSOAS(ALUNO): Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	c) Campo FK_PESSOAS(FAMILIAR): Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	d) Campo GRAU_PARENENTESCO: 
+
+	Tabela ESTADO: Tabela que armazena estados brasileiros. 
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo NOME: Recebe o Nome do Estado.
+
+	Tabela CIDADE: Tabela que armazena as cidades brasileiras. 
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo NOME: Recebe o Nome da Cidade.
+	c) Campo FK_ESTADO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+	Tabela BAIRRO: Tabela que armazena bairros brasileiros.
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo NOME: Recebe o Nome do Bairro.
+	c) Campo FK_CIDADE: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+	Tabela RUA: Tabela que armazena ruas brasileiras 
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo NOME: Recebe o Nome da Rua.
+	c) Campo FK_ID_BAIRRO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+	Tabela AUXILIO: Tabela que contem uma lista com os alunos que possuem tais auxilios e seus subtipos. 
+	a) Campo ID: Armazena o id do tipo principal do auxilio.
+	b) Campo FK_MODALIDADE: Armazena o Relacionamento com o Subtipo do Auxilio Principal. 
+	c) Campo FK_ALUNO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+	Tabela TIPO_DE_AUXILIO: Tabela que armazena os principais tipos de auxilios (Valores Preenchidos Pelos Funcioários do Setor)
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo TIPO: recebe os tipos principais dos auxilios. Ex: Transporte, ALimentação etc. 
+
+	Tabela MODALIDADE: Tabela que armazena uma lista com os sub-tipos de auxilios que o setor de assistencia estudantil dispoe. (Valores Preenchidos Pelos Funcioários do Setor)
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo TIPO: Informa o tipo do auxilio. Ex: Gv1(Apenas Sistema Transcol) etc..
+	c) Campo DESCRICAO: Descreve o tipo acima.
+	d) Campo FK_TIPO_DE_AUXILIO:Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+	Tabela DOCUMENTOS_COMPROBATORIOS: Tabela que armazena anexos de documentos em pdf.
+	a) Campo MATRICULA: Armazena as matriculas que se encaixam na seleção.
+	b) Campo DOCUMENTACAO: Armazena o arquivo descrito acima.
+
+	Tabela ATIVIDADES: Tabela que armazena atividades em geral. 
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo TIPO_DE_ATIVIDADE: Recebe tipos de atividades. Ex: Estagio, Estudo, Outros. 
+
+	Tabela DETALHAMENTO_ATIVIDADE: Tabela que armazena atividades descritas pelos alunos. 
+	a) Campo FK_ATIVIDADE:  Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo DESCRICAO_ATIVIDADE: Recebe a descrição de N atividades que tal aluno faz.
+	c) Campo (FK-ID_HORARIO)HORA_INICIO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	d) Campo (FK-ID_HORARIO)HORA_FIM: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+	Tabela HORARIO: Tabela que armazena um intervalo de horas.
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo HORAS: Recebe um intervalo de horas. 
+
+	Tabela EVASAO_QUADRO_DIFICULDADES:
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo FK_ALUNO:  Recebe o Aluno que descreverá sua rotina semanal.
+	c) Campo FK_PESSOAS_DIA_SEMANA: Recebe o dia em que o aluno acima fez tal atividade.
+	d) Campo FK_DETALHAMENTO_ATIVIDADE: Recebe a dificuldade em que o aluno descrito fez. 
+
+	Tabela DIA_SEMANA: Tabela que recebe os dias de semana, para seleções e relacionamentos.
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo NOME: Recebe o dia de semana.
+
+	Tabela DISCIPLINAS: Tabela que armazena todas as disciplinas do curso.
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo NOME: Recebe o nome das disciplinas 
+
+	Tabela DIFICULDADES: Tabela que relaciona os alunos com as disciplinas e dificuldades 
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo FK_ALUNO: Recebe o aluno que esta com a dificuldade x na materia y.
+	c) Campo FK_DISCIPLINA: Recebe a Disciplina y em que o aluno possui dificuldade 
+	d) Campo FK_DETALHAMENTO_ATIVIDADE: Recebe as dificuldades detalhadas pelo aluno. 
+
+	Tabela DETALHAMENTO_ATIVIDADE: Tabela que informa os detalhes descritos pelo usuário para as dificuldades encontradas 
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo DESCRICAO:  Armazena a descrição da dificuldade informada.
+
+	Tabela ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA: Tabela que informa os alunos que possuem interesse em participar da assistencia estudantil. 
+	a) Campo FK_ALUNO: Armazena as matriculas que se encaixam na seleção.
+
+	Tabela ALUNOS_JA_PARTICIPANTES_ASSISTENCIA: Tabela que informa os alunos que ja possuem auxilios.
+	a) Campo FK_ALUNO: Armazena as matriculas que se encaixam na seleção.
+
+	Tabela ASSISTENCIA_ALUNOS_PENDENCIA_DOCUMENTO: Tabela que informa os alunos que possuem pendencia com o setor de assistencia. 
+	a) Campo: FK_ALUNO: Armazena o inteiro de relacioamento com o aluno que se encaixa na seleção prescrita pela tabela. 
+	b) Campo: FK_TIPO_DOCUMENTOS: Armazena as matriculas que se encaixam na seleção.
 	
-
-
 ### 6	MODELO LÓGICO<br>
         a) inclusão do modelo lógico do banco de dados
         b) verificação de correspondencia com o modelo conceitual 
