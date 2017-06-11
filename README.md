@@ -746,6 +746,17 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/tipo_documentos.JPG)
 	
 	-------9.2------------
+	
+	
+	-------9.3-------------
+	
+	
+	------9.4---------------
+	
+
+	
+#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
+
 	SELECT * FROM ALUNO WHERE MATRICULA=20151001;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.2.JPG)
 	
@@ -754,15 +765,17 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	
 	SELECT * FROM RENDA_FAMILIAR WHERE RENDA_MENSAL='0';
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.2.JPG)
-	
-	-------9.3-------------
+
+#### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
+
 	SELECT TIPO,DESCRICAO,FK_TIPO_AUXILIO AS TIPO_AUXILIO FROM MODALIDADE_AUXILIOS WHERE FK_TIPO_AUXILIO=1 OR FK_TIPO_AUXILIO=3;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.3.JPG)
 	
 	SELECT RENDA_MENSAL,RENDA_MENSAL*1.1 AS RENDA_MENSAL_COM_ACRESCIMO FROM RENDA_FAMILIAR;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2-9.3.JPG)
-	
-	------9.4---------------
+
+#### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3) <br>
+
 	SELECT NOME FROM PESSOAS WHERE NOME LIKE 'M%';
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.4.JPG)
 	
@@ -772,10 +785,6 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	SELECT NOME FROM PESSOAS WHERE NOME LIKE '_____________';
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.4.JPG)
 
-	
-#### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
-#### 9.3	CONSULTAS QUE USAM OPERADORES LÓGICOS, ARITMÉTICOS E CAMPOS RENOMEADOS (Mínimo 2)<br>
-#### 9.4	CONSULTAS QUE USAM OPERADORES LIKE (Mínimo 3) <br>
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Todas Junções)<br>
         Entrega até este ponto em: (Data a ser definida)
