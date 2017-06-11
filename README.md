@@ -41,7 +41,8 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
     Esta tabela deve conter todos os atributos do sistema e um mínimo de 10 linhas.
     (esta tabela tem a intenção de simular um relatório com todos os dados que serão armazenados 
     e deve ser criada antes do modelo conceitual)
-    Versão completa da tabela: https://github.com/projetobdifes01/ProjetoBD/blob/master/Dados-Tabela%20Inicial%20(1).xlsx
+    
+   Versão completa da tabela: https://github.com/projetobdifes01/ProjetoBD/blob/master/Dados-Tabela%20Inicial%20(1).xlsx
     
   ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/Tabelao.PNG)
 
