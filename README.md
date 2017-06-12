@@ -1240,7 +1240,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/disciplinas.JPG)
 	
 	SELECT * FROM DOCUMENTOS;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos.JPG)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/disciplinas-2.JPG.png)
 	
 	SELECT * FROM DOCUMENTOS_COMPROBATORIOS;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos_comprobatorios.JPG)
@@ -1252,7 +1252,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/evasao_quadro_atividades.JPG)
 	
 	SELECT * FROM HORARIO; 
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/horario.JPG)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/horario-2.JPG.png)
 	
 	SELECT * FROM MODALIDADE_AUXILIOS;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/modalidade_auxilios.JPG)
