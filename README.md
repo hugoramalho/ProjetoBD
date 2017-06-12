@@ -1237,10 +1237,10 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/dificuldades.JPG)
 	
 	SELECT * FROM DISCIPLINAS;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/disciplinas.JPG)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/disciplinas-2.JPG.png)
 	
 	SELECT * FROM DOCUMENTOS;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/disciplinas-2.JPG.png)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos.JPG)
 	
 	SELECT * FROM DOCUMENTOS_COMPROBATORIOS;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos_comprobatorios.JPG)
