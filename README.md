@@ -1331,14 +1331,14 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	SELECT * FROM ALUNO;
   ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/aluno.JPG)
   
-  	SELECT * FROM ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA;
-  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_interessados_participar_assistencia.JPG)
+  	SELECT * FROM INTERESSADOS_PARTICIPAR;
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/interessados_participar.JPG)
 	
-	SELECT * FROM ALUNOS_JA_PARTICIPANTES_ASSISTENCIA;
-  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_ja_participantes_assistencia.JPG)
+	SELECT * FROM PARTICIPANTES;
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/participantes.JPG)
   
-  	SELECT * FROM ALUNOS_PENDENCIAS_DOCUMENTOS;
-  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/alunos_pendencias_documentos.JPG)
+  	SELECT * FROM PENDENCIAS_DOCUMENTOS;
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/pendencias_documentos.JPG)
   
   	SELECT * FROM ATIVIDADES;
   ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/atividades.JPG)
@@ -1356,7 +1356,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/contatos.JPG)
 	
 	SELECT * FROM DATA_NASCIMENTO;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/data_nascimento.JPG)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/data_nascimento.jpg)
 	
 	SELECT * FROM DETALHAMENTO_ATIVIDADE;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/detalhamento_atividade.JPG)
@@ -1371,10 +1371,10 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/dificuldades.JPG)
 	
 	SELECT * FROM DISCIPLINAS;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/disciplinas-2.JPG.png)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/disciplinas.JPG)
 	
 	SELECT * FROM DOCUMENTOS;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos.JPG)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos.jpg)
 	
 	SELECT * FROM DOCUMENTOS_COMPROBATORIOS;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/documentos_comprobatorios.JPG)
@@ -1386,7 +1386,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/evasao_quadro_atividades.JPG)
 	
 	SELECT * FROM HORARIO; 
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/horario-2.JPG.png)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/horario.JPG)
 	
 	SELECT * FROM MODALIDADE_AUXILIOS;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/modalidade_auxilios.JPG)
@@ -1395,7 +1395,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/parentesco.JPG)
 	
 	SELECT * FROM PESSOAS;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/pessoas.JPG)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/pessoas.jpg)
 	
 	SELECT * FROM QUADRO_FAMILIAR;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/quadro_familiar.JPG)
