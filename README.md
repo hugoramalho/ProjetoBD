@@ -52,7 +52,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 
 ### 5.MODELO CONCEITUAL<br>
     A) NOTACAO ENTIDADE RELACIONAMENTO
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/Modelo%20Conceitual%20Atual/modelo_conceitual_atualizado.jpg)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/Modelo-Conceitual.jpg?raw=true)
     
     B) NOTACAO UML (Caso esteja fazendo a disciplina de analise)
     C) QUALIDADE 
