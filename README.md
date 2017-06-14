@@ -84,27 +84,22 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	Tabela DATA_NASCIMENTO:
 	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 	b) Campo DATA_NASCIMENTO: Campo recebe a variavel date, pois o mesmo recebera apenas valores como datas. 
-	d) Campo FK_PESSOAS: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela CONTATOS:
-	a) Campo CODIGO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 	b) Campo DESCRICAO_CONTATO: Recebe multiplos valores pois tal campo sera preenchido pelo usuário
 
 	Tabela TIPO_CONTATO:
-	a) Campo CODIGO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 	b) Campo DESCRICAO: Recebe multiplos valores pois tal campo sera preenchido pelo usuário.
 
 	Tabela Pessoas:
 	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 	b) Campo Nome: Recebe valores de texto, pois será usado apenas para armazenar letras. 
 
-	Tabela VINCULO_EMPREGATICIO:
-	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
-	b) Campo Situacao: Recebe Booleano pois só precisaremos, para futuras análises se sim ou não.
-
 	Tabela RENDA_FAMILIAR:
-	a) Campo FK_PESSOAS: Campo recebe inteiro, para melhor desempenho e futuras seleções.
-	b) Campo FK_VINCULO_EMPREGATICIO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo FK_PESSOAS: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 	c) Campo RENDA_MENSAL: Recebe o tipo Money por se tratar de armazenamento de valores em dinheiro. 
 
 	Tabela QUADRO_FAMILIAR:
@@ -148,18 +143,20 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	d) Campo FK_TIPO_DE_AUXILIO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela DOCUMENTOS_COMPROBATORIOS:
-	a) Campo MATRICULA: No projeto, optamos por manter um campo com multiplos valores pois, tal campo recebe como identificão valores como o ano/semestre/siglacurso/numeroderegistro. 
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 	b) Campo DOCUMENTACAO: Campo que ira receber anexos em pdf dos documentos enviados pelos alunos. 
+	c) Campo FK_ALUNO: Campo recebe inteiro, permintindo a identificacao do mesmo.
 
 	Tabela ATIVIDADES:
 	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 	b) Campo TIPO_DE_ATIVIDADE: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 	Tabela DETALHAMENTO_ATIVIDADE:
-	a) Campo FK_ATIVIDADE: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 	b) Campo DESCRICAO_ATIVIDADE: Campo que recebe valores multiplos pois ira ser preenchido pelo usuário.
 	c) Campo (FK-ID_HORARIO)HORA_INICIO: Campo que ira expor as horas em intervalos ja pre estabelcidos.
 	d) Campo (FK-ID_HORARIO)HORA_FIM: Campo que ira expor as horas em intervalos ja pre estabelcidos.
+	e) Campo FK_ATIVIDADE: Campo recebe inteiro, com o tipo da atividade.
 
 	Tabela HORARIO:
 	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
@@ -189,15 +186,18 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 	b) Campo DESCRICAO:  Campo que recebe valores de texto que serao digitados pelos usuários.
 
-	Tabela ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA:
-	a) Campo FK_ALUNO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	Tabela INTERESSADOS_PARTICIPAR:
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo FK_ALUNO: Campo recebe inteiro, permintindo a identificacao do mesmo.
       
-	Tabela ALUNOS_JA_PARTICIPANTES_ASSISTENCIA:
-	a) Campo FK_ALUNO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	Tabela PARTICIPANTES:
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo FK_ALUNO: Recebe o ID do aluno permintindo a identificacao do mesmo.
 
-	Tabela ASSISTENCIA_ALUNOS_PENDENCIA_DOCUMENTO:
-	a) Campo: FK_ALUNO: Campo recebe inteiro, para melhor desempenho e futuras seleções.
-	b) Campo: FK_TIPO_DOCUMENTOS: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	Tabela PENDENCIA_DOCUMENTO:
+	a) Campo ID: Campo recebe inteiro, para melhor desempenho e futuras seleções.
+	b) Campo FK_ALUNO: Recebe o ID do aluno permintindo a identificacao do mesmo.
+	c) Campo FK_TIPO_DOCUMENTOS: Campo recebe inteiro, para melhor desempenho e futuras seleções.
 
 
 
@@ -222,7 +222,6 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	Tabela DATA_NASCIMENTO: Tabela que armazena datas de nascimentos diversas. 
 	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 	b) Campo DATA_NASCIMENTO: armazena a data de nascimento da pessoa.
-	d) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 
 	Tabela CONTATOS: Tabela que armazena contatos em geral
 	a) Campo CODIGO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
@@ -236,13 +235,9 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 	b) Campo Nome: Recebe o nome da pessoa.
 
-	Tabela VINCULO_EMPREGATICIO: Tabela que Recebe a situação se uma pessoa está ou não trabalhando.
-	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	b) Campo Situacao: Diz se o ID relacionado acima está ou não trablhando.
-
 	Tabela RENDA_FAMILIAR: Tabela que armazena as pessoas e suas respectivas rendas.
-	a) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	b) Campo FK_VINCULO_EMPREGATICIO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 	c) Campo RENDA_MENSAL: Armazena o valor da renda das pessoas relacionadas acima. 
 
 	Tabela QUADRO_FAMILIAR: Tabela que armazena as pessoas que estao relacionadas com o aluno X.
@@ -294,10 +289,11 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	b) Campo TIPO_DE_ATIVIDADE: Recebe tipos de atividades. Ex: Estagio, Estudo, Outros. 
 
 	Tabela DETALHAMENTO_ATIVIDADE: Tabela que armazena atividades descritas pelos alunos. 
-	a) Campo FK_ATIVIDADE:  Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 	b) Campo DESCRICAO_ATIVIDADE: Recebe a descrição de N atividades que tal aluno faz.
 	c) Campo (FK-ID_HORARIO)HORA_INICIO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 	d) Campo (FK-ID_HORARIO)HORA_FIM: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	e) Campo FK_ATIVIDADE:  Armazena o valor em inteiro para futuras seleções e relacionamentos.
 
 	Tabela HORARIO: Tabela que armazena um intervalo de horas.
 	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
@@ -323,17 +319,20 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	c) Campo FK_DISCIPLINA: Recebe a Disciplina y em que o aluno possui dificuldade 
 	d) Campo FK_DETALHAMENTO_ATIVIDADE: Recebe as dificuldades detalhadas pelo aluno. 
 
-	Tabela DETALHAMENTO_ATIVIDADE: Tabela que informa os detalhes descritos pelo usuário para as dificuldades encontradas 
+	abela DETALHAMENTO_DIFICULDADES: Tabela que informa os detalhes descritos pelo usuário para as dificuldades encontradas 
 	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	b) Campo DESCRICAO:  Armazena a descrição da dificuldade informada.
+	b) Campo DESCRICAO:  Armazena a descrição da dificuldade informada.T
 
-	Tabela ALUNOS_INTERESSADOS_PARTICIPAR_ASSISTENCIA: Tabela que informa os alunos que possuem interesse em participar da assistencia estudantil. 
-	a) Campo FK_ALUNO: Armazena as matriculas que se encaixam na seleção.
+	Tabela INTERESSADOS_PARTICIPAR: Tabela que informa os alunos que possuem interesse em participar da assistencia estudantil. 
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo FK_ALUNO: Armazena as matriculas que se encaixam na seleção.
 
-	Tabela ALUNOS_JA_PARTICIPANTES_ASSISTENCIA: Tabela que informa os alunos que ja possuem auxilios.
-	a) Campo FK_ALUNO: Armazena as matriculas que se encaixam na seleção.
+	Tabela PARTICIPANTES: Tabela que informa os alunos que ja possuem auxilios.
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+	b) Campo FK_ALUNO: Armazena as matriculas que se encaixam na seleção.
 
-	Tabela ASSISTENCIA_ALUNOS_PENDENCIA_DOCUMENTO: Tabela que informa os alunos que possuem pendencia com o setor de assistencia. 
+	Tabela PENDENCIA_DOCUMENTO: Tabela que informa os alunos que possuem pendencia com o setor de assistencia. 
+	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 	a) Campo: FK_ALUNO: Armazena o inteiro de relacioamento com o aluno que se encaixa na seleção prescrita pela tabela. 
 	b) Campo: FK_TIPO_DOCUMENTOS: Armazena as matriculas que se encaixam na seleção.
 	
