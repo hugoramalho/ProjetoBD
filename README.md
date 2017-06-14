@@ -16,19 +16,18 @@ O trabalho visa mapear as principais dificuldades dos alunos e também, amenizar
 
 ### 3.MINI-MUNDO<br>
 
-Descrever o mini-mundo! (Não deve ser maior do que 30 linhas) <br>
-Entrevista com o usuário e identificação dos requisitos.<br>
-Descrição textual das regras de negócio definidas como um  subconjunto do mundo real 
-cujos elementos são propriedades que desejamos incluir, processar, armazenar, 
-gerenciar, atualizar, e que descrevem a proposta/solução a ser desenvolvida.
-
-Um dos objetivos Acabar com as pilhas enormes de papeis no processo de entrada do aluno na assistência estudantil do campus. O projeto visa também economia de custos com xerox e menos circulação de papel.
+Bascimanete, o aluno se inscreve com todos os dados, após ter lido todo o edital de inscrição dos auxilios. Com a confirmação de leitura, o aluno fornece os anexos em pdf dos documentos. 
+As funcionárias do setor avaliam a situação do aluno e divulgam os resultados finais, com base nos dados obtidos dos alunos que querem participar do auxilio.
+Ja na parte de controle de evasão. O aluno que está passando por dificuldades pode descrever tais fatores que podem estar dificultando sua permanencia no campus, para que o gerenciador do sistema veja e relate a coordenação do curso ou quem for de interesse para que projetos sejam montados com base nos dados. 
+Um dos objetivos Acabar com as pilhas enormes de papeis no processo de entrada do aluno na assistência estudantil do campus. 
+O projeto visa também economia de custos com xerox e menos circulação de papel.
 Avaliar os alunos com questionamentos, visando controlar e prever a evasão em cursos considerados de extrema dificuldade.  
 O projeto visa entender e compreender as dificuldades de um aluno que está com um provável pensamento de desistência do curso.  
 Buscando manter a identidade do aluno apenas entre as entidades envolvidas, iremos realizar questionamentos e com base nos dados recolhidos, poderíamos apontar por exemplo, em quais matérias o aluno tem dificuldade.  
 Os dados seriam obtidos por meio de entrevistas presencias e formulários eletrônicos.  
 Buscando identificar um padrão de aluno que possa vir a evadir do curso. E com os dados coletados, poderíamos ver onde é necessário algum tipo de mudança, ou a inclusão de projetos que auxiliem o aluno.   
 O Projeto visa também eliminar de vez os papeis da assistência estudantil. Visando escaneamento dos documentos solicitados pela assistência estudantil com verificação de autenticidade dos documentos informados. Com a coleta dos dados, as profissionais do setor teriam mais agilidade no processo, visando analises com os critérios de avaliação das mesmas. 
+. 
 
 ### 4.RASCUNHOS BÁSICOS DA INTERFACE (MOCKUPS)<br>
 Neste ponto a codificação não e necessária, somente as ideias de telas devem ser criadas, o princípio aqui é pensar na criação da interface para identificar possíveis informações a serem armazenadas ou descartadas <br>
