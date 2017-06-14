@@ -1332,7 +1332,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
   ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/aluno.JPG)
   
   	SELECT * FROM INTERESSADOS_PARTICIPAR;
-  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/interessados_participar.JPG)
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/inrteressados_participar.JPG)
 	
 	SELECT * FROM PARTICIPANTES;
   ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/participantes.JPG)
