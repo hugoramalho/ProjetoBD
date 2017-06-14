@@ -61,7 +61,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
         e tuplas falsas
     
 #### 5.1 Validação do Modelo Conceitual
-    [Grupo01]: [Nomes dos que participaram na avaliação]
+    [Projeto de Manutenção]: [Gabriel Pontes, Helen Franca e Olavo Curatola]
     [Grupo02]: [Nomes dos que participaram na avaliação]
 
 #### 5.2 DECISÕES DE PROJETO
