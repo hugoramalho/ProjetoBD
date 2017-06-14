@@ -269,7 +269,17 @@ VALUES	(1,'Gabriel Santos'),
         (7,'Roberval Vieira'),
         (8,'Sandra Araújo'),
         (9,'Mário Fontes'),
-        (10,'Marilda Silva');
+        (10,'Marilda Silva'),
+		(11,'Sergio Antunes'),
+		(12,'Paulo Antunes'),
+		(13,'Danilo Magalhães'),
+		(14,'Osvaldo Magalhães'),
+		(15,'Larissa Santana'),
+		(16,'Joséfa Santana'),
+		(17,'Melissa Garcia'),
+		(18,'Jorge Garcia'),
+		(19,'Bruno Viana'),
+		(20,'Marcio Viana');
 
         
 INSERT INTO ALUNO(MATRICULA,FK_PESSOAS)
@@ -277,7 +287,13 @@ VALUES	(20151001,1),
 		(20151002,2),
 		(20151003,3),
 		(20151004,4),
-		(20151005,5);
+		(20151005,5),
+		(20151006,11),
+		(20151007,13),
+		(20151008,15),
+		(20151009,17),
+		(20151010,19);
+		
 
 		
 INSERT INTO TIPO_DOCUMENTOS(ID,TIPO_DOCUMENTOS)
@@ -289,16 +305,28 @@ VALUES 	(1,'CPF'),
 		
 
 INSERT INTO DOCUMENTOS(ID,NUMERO_DOCUMENTO,FK_TIPO_DOCUMENTOS,FK_PESSOAS)
-VALUES	(1,'1.111.111',2,1),
-		(2,'2.222.222',2,2),
-		(3,'3.333.333',2,3),
-		(4,'4.444.444',2,4),
-		(5,'5.555.555',2,5),
-        (6,'6.666.666',2,6),
-        (7,'7.777.777',2,7),
-        (8,'8.888.888',2,8),
-        (9,'9.999.999',2,9),
-        (10,'10.101.101',2,10);
+VALUES	(1,'1.111.111',1,1),
+		(2,'2.222.222',1,2),
+		(3,'3.333.333',1,3),
+		(4,'4.444.444',1,4),
+		(5,'5.555.555',1,5),
+        (6,'6.666.666',1,6),
+        (7,'7.777.777',1,7),
+        (8,'8.888.888',1,8),
+        (9,'9.999.999',1,9),
+        (10,'10.101.101',1,10),
+		(11,'456789',2,11),
+		(12,'123456',2,12),
+		(13,'234567',2,13),
+		(14,'345678',2,14),
+		(15,'456789',2,15),
+		(16,'098765',2,16),
+		(17,'987654',2,17),
+		(18,'876543',2,18),
+		(19,'654321',2,19),
+		(20,'045678',2,20);
+
+		
 
 INSERT INTO DATA_NASCIMENTO(ID,DATA_NASCIMENTO)
 VALUES	(1,'07/08/1994'),
@@ -311,6 +339,16 @@ VALUES	(1,'07/08/1994'),
         (8,'07/08/1963'),
         (9,'07/08/1964'),
         (10,'07/08/1965');
+		(11,'01/01/1994'),
+		(12,'01/02/1960'),
+		(13,'02/08/1995'),
+		(14,'03/03/1970'),
+        (15,'02/08/1996'),
+        (16,'07/08/1959'),
+        (17,'03/02/1997'),
+        (18,'12/12/1971'),
+        (19,'12/09/1998');
+		(20,'13/10/1960');
 
 INSERT INTO CONTATOS(ID,DESCRICAO_CONTATO)
 VALUES 	(1,'gabriel@gmail.com'),
@@ -322,7 +360,18 @@ VALUES 	(1,'gabriel@gmail.com'),
         (7,'roberval@gmail.com'),
         (8,'sandra@gmail.com'),
         (9,'mario@gmail.com'),
-        (10,'marilda@gmail.com');
+        (10,'marilda@gmail.com'),
+		(11,'sergio@gmail.com'),
+		(12,'paulo@gmail.com'),
+		(13,'danilo@gmail.com'),
+		(14,'osvaldo@gmail.com'),
+		(15,'larissa@gmail.com'),
+		(16,'josefa@gmail.com'),
+		(17,'melissa@gmail.com'),
+		(18,'jorge@gmail.com'),
+		(19,'bruno@gmail.com'),
+		(20,'marcio@gmail.com');
+		
 		
 INSERT INTO TIPO_CONTATO(ID,DESCRICAO)
 VALUES	(1,'TELEFONE FIXO'),
@@ -335,19 +384,31 @@ INSERT INTO RENDA_FAMILIAR(ID,FK_PESSOAS,RENDA_MENSAL)
 VALUES (1,6,1548.65),
 	   (2,7,0),
 	   (3,8,0),
-	   (4,9,25000.68),
+	   (4,9,2500.68),
 	   (5,10,0);
+	   (6,12,1000),
+	   (7,14,3000),
+	   (8,16,3700),
+	   (9,18,5000),
+	   (10,20,6000);
+	   
 INSERT INTO PARENTESCO(ID, GRAU_PARENTESCO)
 VALUES (1,'MAE'),
 		(2,'PAI'),
         (3,'IRMAO'),
-        (4,'AVÓ');
+        (4,'AVÓ'),
+        (5,'TIO');
 INSERT INTO QUADRO_FAMILIAR(ID,FK_PESSOAS_ALUNO,FK_PESSOAS_FAMILIARES,FK_GRAU_PARENTESCO)
 VALUES (1,1,6,1),
 	   (2,2,7,2),
 	   (3,3,8,1),
 	   (4,4,9,2),
-       (5,5,10,1);
+       (5,5,10,1),
+	   (6,11,12,2),
+	   (7,13,14,2),
+	   (8,15,16,1),
+	   (9,17,18,2),
+	   (10,19,20,2);
 	 
 INSERT INTO ESTADO(ID,ESTADO)
 VALUES	(1,'ESPIRTO SANTO'),
@@ -440,10 +501,12 @@ VALUES (1,'01:00'),
        (24,'24:00');
        
 INSERT INTO DETALHAMENTO_ATIVIDADE(ID,FK_ATIVIDADES,DESCRICAO_ATIVIDADE,FK_HORARIO_INI,FK_HORARIO_FIM)
-VALUES (1,1,'JOGUEI FUTEBOL',14,15),
-	   (2,2,'SUPORTE TECNICO NO BANESTES',16,22),
-	   (3,3,'ESTUDEI JOIN DA MATERIA DE BD',23,24);
-	   
+VALUES (1,1,'CORRIDA NA PRAIA',6,7),
+	   (2,3,'IFES',8,12),
+	   (3,1,'JOGUEI FUTEBOL',14,15),
+	   (4,2,'SUPORTE TECNICO NO BANESTES',16,22),
+	   (5,3,'ESTUDEI JOIN DA MATERIA DE BD',23,24);
+       
 INSERT INTO DIA_SEMANA(ID,NOME)
 VALUES (1,'SEGUNDA'),
        (2,'TERCA'),
@@ -456,9 +519,9 @@ VALUES (1,'SEGUNDA'),
 INSERT INTO EVASAO_QUADRO_ATIVIDADES(ID,FK_ALUNO,FK_DIA_SEMANA,FK_DETALHAMENTO_ATIVIDADE)
 VALUES (1,20151001,1,1),
        (2,20151001,1,2),
-       (3,20151001,3,1),
-       (4,20151001,4,3),
-       (5,20151001,2,3);
+       (3,20151001,3,3),
+       (4,20151001,4,4),
+       (5,20151001,2,5);
 
 INSERT INTO DISCIPLINAS(ID,DISCIPLINA)
 VALUES	(1,'CALCULO 1'),
@@ -509,24 +572,35 @@ VALUES	(1,'CALCULO 1'),
 INSERT INTO DETALHAMENTO_DIFICULDADES(ID,DESCRICAO)
 VALUES (1,'DERIVADAS'),
        (2,'CRIAR FICHAMENTOS E MAPAS MENTAIS'),
-       (3,'FALTA DE RACIOCINIO LOGICO');
+       (3,'FALTA DE RACIOCINIO LOGICO'),
+       (4,'CRIAR MODELO CONCEITUAL'),
+       (5,'CRIAR ARTIGO');
        
 INSERT INTO DIFICULDADES(ID,FK_ALUNO,FK_DISCIPLINAS,FK_DETALHAMENTO_DIFICULDADES)
 VALUES (1,20151001,1,1),
        (2,20151002,11,2),
-       (3,20151003,2,3);
-
-
+       (3,20151003,2,3),
+       (4,20151004,18,4),
+	   (5,20151005,20,5);
+       
 INSERT INTO INTERESSADOS_PARTICIPAR(ID,FK_ALUNO)
-VALUES	(1,20151004),
-		(2,20151005);
+VALUES	(1,20151006),
+		(2,20151007),
+		(3,20151008),
+		(4,20151009),
+		(5,20151010);
 
 	
 INSERT INTO PARTICIPANTES(ID,FK_ALUNO)
 VALUES	(1,20151001),
-		(2,20151002);
+		(2,20151002),
+		(3,20151003),
+		(4,20151004),
+		(5,20151005);
 
 INSERT INTO PENDENCIAS_DOCUMENTOS(ID,FK_ALUNO,FK_TIPO_DOCUMENTOS)
-VALUES	(1,20151001,1),
-		(2,20151002,2),
-		(3,20151003,3);
+VALUES	(1,20151006,1),
+		(2,20151007,2),
+		(3,20151008,3),
+		(4,20151009,4),
+		(5,20151010,5);
