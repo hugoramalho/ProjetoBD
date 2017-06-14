@@ -1415,9 +1415,6 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	SELECT * FROM TIPO_DOCUMENTOS;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/tipo_documentos.JPG)
 	
-	SELECT * FROM VINCULO_EMPREGATICIO;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/tipo_documentos.JPG)
-	
 #### 9.2	CONSULTAS DAS TABELAS COM FILTROS WHERE (Mínimo 3)<br>
 
 	SELECT * FROM ALUNO WHERE MATRICULA=20151001;
