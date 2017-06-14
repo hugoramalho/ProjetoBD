@@ -1058,7 +1058,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
         	(7,'07/08/1962'),
         	(8,'07/08/1963'),
         	(9,'07/08/1964'),
-        	(10,'07/08/1965');
+        	(10,'07/08/1965'),
 		(11,'01/01/1994'),
 		(12,'01/02/1960'),
 		(13,'02/08/1995'),
@@ -1067,7 +1067,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
         	(16,'07/08/1959'),
         	(17,'03/02/1997'),
         	(18,'12/12/1971'),
-        	(19,'12/09/1998');
+        	(19,'12/09/1998'),
 		(20,'13/10/1960');
 
 	INSERT INTO CONTATOS(ID,DESCRICAO_CONTATO)
