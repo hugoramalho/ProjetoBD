@@ -44,8 +44,8 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
     e deve ser criada antes do modelo conceitual)
     
    Versão completa da tabela: https://github.com/projetobdifes01/ProjetoBD/blob/master/Dados-Tabela%20Inicial.xlsx
-    
-  ![Alt text]https://github.com/projetobdifes01/ProjetoBD/blob/master/tabe.PNG)
+   
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/tabe.PNG)
 
   
 
