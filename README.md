@@ -337,9 +337,8 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	b) Campo: FK_TIPO_DOCUMENTOS: Armazena as matriculas que se encaixam na seleção.
 	
 ### 6	MODELO LÓGICO<br>
-        a) inclusão do modelo lógico do banco de dados
-        b) verificação de correspondencia com o modelo conceitual 
-        (não serão aceitos modelos que não estejam em conformidade)
+        a) inclusão do modelo lógico do banco de dados  
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/LOGICO%2002.jpg)
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas DDL 
