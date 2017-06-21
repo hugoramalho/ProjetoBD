@@ -15,7 +15,7 @@ O trabalho visa mapear as principais dificuldades dos alunos e também, amenizar
 
 ### 3.MINI-MUNDO<br>
 
-Bascimanete, o aluno se inscreve com todos os dados, após ter lido todo o edital de inscrição dos auxilios. Com a confirmação de leitura, o aluno fornece os anexos em pdf dos documentos. 
+Basicamente, o aluno se inscreve com todos os dados, após ter lido todo o edital de inscrição dos auxilios. Com a confirmação de leitura, o aluno fornece os anexos em pdf dos documentos. 
 As funcionárias do setor avaliam a situação do aluno e divulgam os resultados finais, com base nos dados obtidos dos alunos que querem participar do auxilio.
 Ja na parte de controle de evasão. O aluno que está passando por dificuldades pode descrever tais fatores que podem estar dificultando sua permanencia no campus, para que o gerenciador do sistema veja e relate a coordenação do curso ou quem for de interesse para que projetos sejam montados com base nos dados. 
 Um dos objetivos Acabar com as pilhas enormes de papeis no processo de entrada do aluno na assistência estudantil do campus. 
