@@ -61,7 +61,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
     
 #### 5.1 Validação do Modelo Conceitual
     [Projeto de Manutenção]: [Gabriel Pontes, Helen Franca e Olavo Curatola]
-    [Mani Mobile]: [Marcelo Passamai Mendes, João Pedro Vieira] // Resalvas
+    [Mani Mobile]: [Marcelo Passamai Mendes, João Pedro Vieira] 
 
 #### 5.2 DECISÕES DE PROJETO
     Seguem abaixo as decisões das descrições dos dados. 
