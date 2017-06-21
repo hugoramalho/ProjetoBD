@@ -6,7 +6,6 @@ Trabalho com objetivo de avaliação da disciplina de banco de dados 1, do Insit
 ### 1. COMPONENTES<br>
 Integrantes do grupo<br>
 Antonio Carlos Lemos Junior: antoniocarloslemosjunior@gmail.com<br>
-Landerson Morais Alexandre: <br>
 Lucas Oliveira Garcia: lucasoliveiragarcia@live.com<br>
 Paulo Ricardo Viana Ferreira: paulo_ricardosf@outlook.com<br>
 
