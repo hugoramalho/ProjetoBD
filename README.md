@@ -522,7 +522,7 @@ https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
 	select grau_parentesco,count(fk_grau_parentesco) from parentesco p
 	join quadro_familiar q on (p.id=q.fk_grau_parentesco)
 	group by grau_parentesco;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2-9.7.JPG)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2.9.7.JPG)
 	select grau_parentesco,max(renda_mensal) from parentesco p
 	join quadro_familiar q on (p.id=q.fk_grau_parentesco)
 	join renda_familiar r on (q.fk_pessoas_familiares=r.fk_pessoas)
