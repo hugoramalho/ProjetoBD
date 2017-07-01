@@ -571,9 +571,9 @@ https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.10.JPG)
 	select d.disciplina as disciplinas_alunos_dificuldade from disciplinas d 
 	join dificuldades di on (d.id=di.fk_disciplinas)
-	where d.id in (select di.fk_disciplinas from dificuldades);
+	where d.id in (select di.fk_disciplinas from dificuldades)<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2-9.10.JPG)
-	select nome as familiar from pessoas where id not in (select fk_pessoas from aluno);
+	select nome as familiar from pessoas where id not in (select fk_pessoas from aluno)<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.10.JPG)
 ### 10	ATUALIZAÇÃO DA DOCUMENTAÇÃO DOS SLIDES PARA APRESENTAÇAO FINAL (Mínimo 6 e Máximo 10)<br>
 ### 11	TUTORIAL COMPLETO DE PASSOS PARA RESTAURACAO DO BANCO E EXECUCAO DE PROCEDIMENTOS ENVOLVIDOS NO TRABALHO PARA OBTENÇÃO DOS RESULTADOS<br>
