@@ -498,7 +498,8 @@ https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
 	delete from interessados_participar where fk_aluno = 20151010;
 	delete from disciplinas where disciplina = 'CALCULO 2';
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Todas Junções)<br>
-	select nome as aluno_intessado_participar from pessoas p join aluno a on (p.id=a.fk_pessoas) 
+	select nome as aluno_intessado_participar from pessoas p 
+	join aluno a on (p.id=a.fk_pessoas) 
 	join interessados_participar i on (a.matricula=i.fk_aluno) order by nome;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.6.JPG)
 	select b.nome as bairro,c.nome as cidade,e.estado as estado from bairro b 
