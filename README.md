@@ -488,27 +488,28 @@ https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.4.JPG)
 
 #### 9.5	ATUALIZAÇÃO E EXCLUSÃO DE DADOS (Mínimo 6)<br>
-	update contatos set descricao_contato='marcio@live.com' where descricao_contato='marcio@gmail.com';
+
+	update contatos set descricao_contato='marcio@live.com' where descricao_contato='marcio@gmail.com'<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.5.JPG)
-	update documentos set numero_documento='111111' where numero_documento='098765';
+	update documentos set numero_documento='111111' where numero_documento='098765'<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2-9.5.JPG)
-	update renda_familiar set renda_mensal=500 where id=5;
+	update renda_familiar set renda_mensal=500 where id=5<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.5.JPG)
-	delete from data_nascimento where data_nascimento = '1960-10-13';
+	delete from data_nascimento where data_nascimento = '1960-10-13'<br>
 	delete from interessados_participar where fk_aluno = 20151010;
-	delete from disciplinas where disciplina = 'CALCULO 2';
+	delete from disciplinas where disciplina = 'CALCULO 2'<br>
 #### 9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Todas Junções)<br>
 	select nome as aluno_intessado_participar from pessoas p 
 	join aluno a on (p.id=a.fk_pessoas) 
-	join interessados_participar i on (a.matricula=i.fk_aluno) order by nome;
+	join interessados_participar i on (a.matricula=i.fk_aluno) order by nome<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.6.JPG)
 	select b.nome as bairro,c.nome as cidade,e.estado as estado from bairro b 
 	join cidade c on (b.fk_cidade=c.id) 
-	join estado e on (e.id=c.fk_estado) order by b.nome;
+	join estado e on (e.id=c.fk_estado) order by b.nome<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2-9.6.JPG)
 	select fk_aluno,disciplina,descricao as dificuldade from dificuldades di 
 	join disciplinas d on (di.fk_disciplinas=d.id)
-	join detalhamento_dificuldades de on (di.fk_detalhamento_dificuldades=de.id) order by fk_aluno;
+	join detalhamento_dificuldades de on (di.fk_detalhamento_dificuldades=de.id) order by fk_aluno<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.6.JPG)
 	select fk_aluno as matricula,d.nome as dia_semana,descricao_atividade as atividade from evasao_quadro_atividades e
 	join dia_semana d on (e.fk_dia_semana=d.id) 
