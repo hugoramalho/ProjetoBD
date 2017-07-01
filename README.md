@@ -514,60 +514,60 @@ https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
 	select fk_aluno as matricula,d.nome as dia_semana,descricao_atividade as atividade from evasao_quadro_atividades e
 	join dia_semana d on (e.fk_dia_semana=d.id) 
 	join detalhamento_atividade de on (e.fk_detalhamento_atividade=de.id)
-	order by d.nome desc;
+	order by d.nome desc<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/4-9.6.JPG)
 #### 9.7	CONSULTAS COM GROUP BY (Mínimo 5)<br>
 	select t.tipo,count(fk_tipo_auxilio) as qtd_modalidades from tipo_auxilio t 
 	join modalidade_auxilios m on (t.id=m.fk_tipo_auxilio)
-	group by  t.tipo,m.fk_tipo_auxilio;
+	group by  t.tipo,m.fk_tipo_auxilio<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.7.JPG)
 	select grau_parentesco,count(fk_grau_parentesco) from parentesco p
 	join quadro_familiar q on (p.id=q.fk_grau_parentesco)
-	group by grau_parentesco;
+	group by grau_parentesco<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2.9.7.JPG)
 	select grau_parentesco,max(renda_mensal) from parentesco p
 	join quadro_familiar q on (p.id=q.fk_grau_parentesco)
 	join renda_familiar r on (q.fk_pessoas_familiares=r.fk_pessoas)
-	group by grau_parentesco;
+	group by grau_parentesco<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.7.JPG)
 	select tipo_de_atividade,descricao_atividade  from detalhamento_atividade d
 	join atividades a on (a.id=d.fk_atividades)
-	group by tipo_de_atividade,descricao_atividade;
+	group by tipo_de_atividade,descricao_atividade<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/4-9.7.JPG)
 	select tipo_documentos,count(fk_tipo_documentos) from documentos d
 	join tipo_documentos t on (d.fk_tipo_documentos=t.id)
-	group by fk_tipo_documentos,tipo_documentos;
+	group by fk_tipo_documentos,tipo_documentos<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/5-9.7.JPG)
 #### 9.8	CONSULTAS COM LEFT E RIGHT JOIN (Mínimo 4)<br>
 	select fk_aluno as matricula,disciplina from dificuldades di 
-	right join disciplinas d on (di.fk_disciplinas=d.id);
+	right join disciplinas d on (di.fk_disciplinas=d.id)<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.8.JPG)
 	select nome,matricula from aluno a 
-	right join pessoas p on (a.fk_pessoas=p.id);
+	right join pessoas p on (a.fk_pessoas=p.id)<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2-9.8.JPG)
 	select distinct tipo_documentos,fk_tipo_documentos as tipo_documento from tipo_documentos t
-	left join documentos d  on (t.id=d.fk_tipo_documentos) order by tipo_documento;
+	left join documentos d  on (t.id=d.fk_tipo_documentos) order by tipo_documento<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.8.JPG)
 	select distinct grau_parentesco,fk_grau_parentesco from parentesco p 
-	left join quadro_familiar q on (p.id=q.fk_grau_parentesco) order by fk_grau_parentesco;
+	left join quadro_familiar q on (p.id=q.fk_grau_parentesco) order by fk_grau_parentesco<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/4-9.8.JPG)
 #### 9.9	CONSULTAS COM SELF JOIN E VIEW (Todas Possíveis)<br>
-	create view tipo_e_descricao as select tipo,descricao from modalidade_auxilios;
+	create view tipo_e_descricao as select tipo,descricao from modalidade_auxilios<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.9.JPG)
 	create view renda_entre_mil_e_dois_mil as select nome,renda_mensal from renda_familiar r
 	join pessoas p on (p.id=r.fk_pessoas) where renda_mensal>='1000' and renda_mensal<='2000';
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/2-9.9.JPG)
 	create view atividade_e_horario as select descricao_atividade,fk_horario_ini,fk_horario_fim 
-	from detalhamento_atividade;
+	from detalhamento_atividade<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.9.JPG)
 	select q1.fk_pessoas_aluno as id_aluno,q2.fk_pessoas_familiares as id_familiar from quadro_familiar as q1
-	join quadro_familiar as q2 on (q1.id=q2.id);
+	join quadro_familiar as q2 on (q1.id=q2.id)<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/4-9.9.JPG)
 #### 9.10	SUBCONSULTAS (Mínimo 3)<br>
 	select nome as participantam_assistencia from pessoas p 
 	join aluno a on (p.id=a.fk_pessoas) 
 	join participantes pa on (a.matricula=pa.fk_aluno)
-	where a.matricula in (select pa.fk_aluno from participantes);
+	where a.matricula in (select pa.fk_aluno from participantes)<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/1-9.10.JPG)
 	select d.disciplina as disciplinas_alunos_dificuldade from disciplinas d 
 	join dificuldades di on (d.id=di.fk_disciplinas)
