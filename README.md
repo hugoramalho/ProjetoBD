@@ -366,7 +366,7 @@ https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
 	update renda_familiar set renda_mensal=500 where id=5<br>
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/3-9.5.JPG)
 
-	delete from data_nascimento where data_nascimento = '1960-10-13'<br>
+	delete from parentesco where grau_parentesco = 'TIO'
 	delete from interessados_participar where fk_aluno = 20151010;
 	delete from disciplinas where disciplina = 'CALCULO 2'<br>
 	
