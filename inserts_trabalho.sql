@@ -1,24 +1,24 @@
-INSERT INTO PESSOAS(ID,NOME)
-VALUES	(1,'Gabriel Santos'),
-		(2,'Felipe Vieira'),
-		(3,'Marcos Araújo'),
-		(4,'João Fontes'),
-		(5,'Roberto Silva'),
-        (6,'Maria Santos'),
-        (7,'Roberval Vieira'),
-        (8,'Sandra Araújo'),
-        (9,'Mário Fontes'),
-        (10,'Marilda Silva'),
-		(11,'Sergio Antunes'),
-		(12,'Paulo Antunes'),
-		(13,'Danilo Magalhães'),
-		(14,'Osvaldo Magalhães'),
-		(15,'Larissa Santana'),
-		(16,'Joséfa Santana'),
-		(17,'Melissa Garcia'),
-		(18,'Jorge Garcia'),
-		(19,'Bruno Viana'),
-		(20,'Marcio Viana');
+INSERT INTO PESSOAS(ID,NOME,DATA_NASCIMENTO)
+VALUES	(1,'Gabriel Santos','07/08/19945'),
+		(2,'Felipe Vieira','15/08/1965'),
+		(3,'Marcos Araújo','23/08/1997'),
+		(4,'João Fontes','22/08/19987'),
+		(5,'Roberto Silva','07/09/1974'),
+        (6,'Maria Santos','07/08/1990'),
+        (7,'Roberval Vieira','31/08/1964'),
+        (8,'Sandra Araújo','21/06/1954'),
+        (9,'Mário Fontes','01/04/1993'),
+        (10,'Marilda Silva','09/04/1974'),
+		(11,'Sergio Antunes','30/10/1944'),
+		(12,'Paulo Antunes','05/11/1992'),
+		(13,'Danilo Magalhães','06/08/1974'),
+		(14,'Osvaldo Magalhães','02/08/1984'),
+		(15,'Larissa Santana','28/06/1953'),
+		(16,'Joséfa Santana','22/05/1991'),
+		(17,'Melissa Garcia','20/12/1992'),
+		(18,'Jorge Garcia','10/10/1996'),
+		(19,'Bruno Viana','14/12/1995'),
+		(20,'Marcio Viana','07/11/1992');
 
         
 INSERT INTO ALUNO(MATRICULA,FK_PESSOAS)
@@ -66,28 +66,6 @@ VALUES	(1,'1.111.111',1,1),
 		(20,'045678',2,20);
 
 		
-
-INSERT INTO DATA_NASCIMENTO(ID,DATA_NASCIMENTO)
-VALUES	(1,'07/08/1994'),
-		(2,'07/08/1995'),
-		(3,'07/08/1996'),
-		(4,'07/08/1997'),
-		(5,'07/08/1998'),
-        (6,'07/08/1961'),
-        (7,'07/08/1962'),
-        (8,'07/08/1963'),
-        (9,'07/08/1964'),
-        (10,'07/08/1965');
-		(11,'01/01/1994'),
-		(12,'01/02/1960'),
-		(13,'02/08/1995'),
-		(14,'03/03/1970'),
-        (15,'02/08/1996'),
-        (16,'07/08/1959'),
-        (17,'03/02/1997'),
-        (18,'12/12/1971'),
-        (19,'12/09/1998');
-		(20,'13/10/1960');
 
 INSERT INTO CONTATOS(ID,DESCRICAO_CONTATO)
 VALUES 	(1,'gabriel@gmail.com'),
