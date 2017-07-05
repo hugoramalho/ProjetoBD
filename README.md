@@ -89,7 +89,8 @@ https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
         Detalhamento sobre as informações e processo de obtenção ou geração dos dados.
         Referenciar todas as fontes referentes a :
-        a) obtenção dos dados
+        a) Colocamos dados ficticios, porem a maior parte de inspiração para coleta de dados foi o edital que está disponível no site do campus para consulta pública.
+	Segue o link do edital: https://github.com/projetobdifes01/ProjetoBD/blob/master/Edital%20Auxilio%2020171.pdf
         b) obtenção de códigos reutilizados
         c) fontes de estudo para desenvolvimento do projeto
 
