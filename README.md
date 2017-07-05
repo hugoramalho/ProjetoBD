@@ -261,10 +261,7 @@ https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
 	
 	SELECT * FROM CONTATOS;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/contatos.JPG)
-	
-	SELECT * FROM DATA_NASCIMENTO;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/data_nascimento.jpg)
-	
+		
 	SELECT * FROM DETALHAMENTO_ATIVIDADE;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/detalhamento_atividade.JPG)
 	
@@ -302,7 +299,7 @@ https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/parentesco.JPG)
 	
 	SELECT * FROM PESSOAS;
-![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/pessoas.jpg)
+![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/pessoas.JPG)
 	
 	SELECT * FROM QUADRO_FAMILIAR;
 ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/imagens/quadro_familiar.JPG)
