@@ -85,10 +85,6 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	c) Campo FK_DOCUMENTACAO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 	d) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 
-	Tabela DATA_NASCIMENTO: Tabela que armazena datas de nascimentos diversas. 
-	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
-	b) Campo DATA_NASCIMENTO: armazena a data de nascimento da pessoa.
-
 	Tabela CONTATOS: Tabela que armazena contatos em geral
 	a) Campo CODIGO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 	b) Campo DESCRICAO_CONTATO: recebe a descrição do contato.
@@ -97,9 +93,10 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	a) Campo CODIGO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 	b) Campo DESCRICAO: Recebe a descrição do tipo.
 
-	Tabela Pessoas: Tabela que armazena pessoas em geral.
+	Tabela PESSOAS: Tabela que armazena pessoas em geral.
 	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
 	b) Campo Nome: Recebe o nome da pessoa.
+	c) Campo DATA_NASCIMENTO: armazena a data de nascimento da pessoa.
 
 	Tabela RENDA_FAMILIAR: Tabela que armazena as pessoas e suas respectivas rendas.
 	a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
