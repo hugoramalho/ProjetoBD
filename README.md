@@ -200,7 +200,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 	
 ### 6	MODELO LÓGICO<br>
         a) inclusão do modelo lógico do banco de dados  
-  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/LOGICO%2002.jpg)
+  ![Alt text](https://github.com/projetobdifes01/ProjetoBD/blob/master/Modelo-Logico.jpg)
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas DDL 
