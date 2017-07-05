@@ -1,0 +1,128 @@
+Seguem abaixo a descrição dos dados: 
+Tabela ALUNO: Armazena a matricula e a relacao com a tabela de pessoas que o aluno possui.
+a) Campo MATRICULA: Armazena a Matricula do Aluno da Instituição.
+b) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+Tabela TIPO_DOCUMENTOS: Tabela que armazena os tipos de documentos em geral. 
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo TIPO_DOCUMENTO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+Tabela DOCUMENTOS:  Tabela que Armazena o núemro do documento fornecido pelo usuário.
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo NUMERO_DOCUMENTO: Armazena o número do documento informado pelo usuário.
+c) Campo FK_DOCUMENTACAO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+d) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+Tabela CONTATOS: Tabela que armazena contatos em geral
+a) Campo CODIGO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo DESCRICAO_CONTATO: recebe a descrição do contato.
+
+Tabela TIPO_CONTATO: Tabela que armazena o tipo do contato. E-mail. Telefone Etc.
+a) Campo CODIGO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo DESCRICAO: Recebe a descrição do tipo.
+
+Tabela PESSOAS: Tabela que armazena pessoas em geral.
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo Nome: Recebe o nome da pessoa.
+c) Campo DATA_NASCIMENTO: armazena a data de nascimento da pessoa.
+
+Tabela RENDA_FAMILIAR: Tabela que armazena as pessoas e suas respectivas rendas.
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo FK_PESSOAS: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+c) Campo RENDA_MENSAL: Armazena o valor da renda das pessoas relacionadas acima. 
+
+Tabela QUADRO_FAMILIAR: Tabela que armazena as pessoas que estao relacionadas com o aluno X.
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo FK_PESSOAS(ALUNO): Armazena o valor do inteiro referente ao Aluno.
+c) Campo FK_PESSOAS(FAMILIAR): Armazena o valor em inteiro referente a pessoa relacionada ao aluno.
+d) Campo GRAU_PARENENTESCO: Armazena o grau parentesco em que a pessoa relacionada ao aluno está envolida.
+
+Tabela ESTADO: Tabela que armazena estados brasileiros. 
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo NOME: Recebe o Nome do Estado.
+
+Tabela CIDADE: Tabela que armazena as cidades brasileiras. 
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo NOME: Recebe o Nome da Cidade.
+c) Campo FK_ESTADO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+Tabela BAIRRO: Tabela que armazena bairros brasileiros.
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo NOME: Recebe o Nome do Bairro.
+c) Campo FK_CIDADE: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+Tabela RUA: Tabela que armazena ruas brasileiras 
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo NOME: Recebe o Nome da Rua.
+c) Campo FK_ID_BAIRRO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+Tabela AUXILIO: Tabela que contem uma lista com os alunos que possuem tais auxilios e seus subtipos. 
+a) Campo ID: Armazena o id do tipo principal do auxilio.
+b) Campo FK_MODALIDADE: Armazena o Relacionamento com o Subtipo do Auxilio Principal. 
+c) Campo FK_ALUNO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+Tabela TIPO_DE_AUXILIO: Tabela que armazena os principais tipos de auxilios (Valores Preenchidos Pelos Funcioários do Setor)
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo TIPO: recebe os tipos principais dos auxilios. Ex: Transporte, ALimentação etc. 
+
+Tabela MODALIDADE: Tabela que armazena uma lista com os sub-tipos de auxilios que o setor de assistencia estudantil dispoe. (Valores Preenchidos Pelos Funcioários do Setor)
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo TIPO: Informa o tipo do auxilio. Ex: Gv1(Apenas Sistema Transcol) etc..
+c) Campo DESCRICAO: Descreve o tipo acima.
+d) Campo FK_TIPO_DE_AUXILIO:Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+Tabela DOCUMENTOS_COMPROBATORIOS: Tabela que armazena anexos de documentos em pdf.
+a) Campo MATRICULA: Armazena as matriculas que se encaixam na seleção.
+b) Campo DOCUMENTACAO: Armazena o arquivo descrito acima.
+
+Tabela ATIVIDADES: Tabela que armazena atividades em geral. 
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo TIPO_DE_ATIVIDADE: Recebe tipos de atividades. Ex: Estagio, Estudo, Outros. 
+
+Tabela DETALHAMENTO_ATIVIDADE: Tabela que armazena atividades descritas pelos alunos. 
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo DESCRICAO_ATIVIDADE: Recebe a descrição de N atividades que tal aluno faz.
+c) Campo (FK-ID_HORARIO)HORA_INICIO: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+d) Campo (FK-ID_HORARIO)HORA_FIM: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+e) Campo FK_ATIVIDADE:  Armazena o valor em inteiro para futuras seleções e relacionamentos.
+
+Tabela HORARIO: Tabela que armazena um intervalo de horas.
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo HORAS: Recebe um intervalo de horas. 
+
+Tabela EVASAO_QUADRO_DIFICULDADES:
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo FK_ALUNO:  Recebe o Aluno que descreverá sua rotina semanal.
+c) Campo FK_PESSOAS_DIA_SEMANA: Recebe o dia em que o aluno acima fez tal atividade.
+d) Campo FK_DETALHAMENTO_ATIVIDADE: Recebe a dificuldade em que o aluno descrito fez. 
+
+Tabela DIA_SEMANA: Tabela que recebe os dias de semana, para seleções e relacionamentos.
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo NOME: Recebe o dia de semana.
+
+Tabela DISCIPLINAS: Tabela que armazena todas as disciplinas do curso.
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo NOME: Recebe o nome das disciplinas 
+
+Tabela DIFICULDADES: Tabela que relaciona os alunos com as disciplinas e dificuldades 
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo FK_ALUNO: Recebe o aluno que esta com a dificuldade x na materia y.
+c) Campo FK_DISCIPLINA: Recebe a Disciplina y em que o aluno possui dificuldade 
+d) Campo FK_DETALHAMENTO_ATIVIDADE: Recebe as dificuldades detalhadas pelo aluno. 
+
+abela DETALHAMENTO_DIFICULDADES: Tabela que informa os detalhes descritos pelo usuário para as dificuldades encontradas 
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo DESCRICAO:  Armazena a descrição da dificuldade informada.T
+
+Tabela INTERESSADOS_PARTICIPAR: Tabela que informa os alunos que possuem interesse em participar da assistencia estudantil. 
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo FK_ALUNO: Armazena as matriculas que se encaixam na seleção.
+
+Tabela PARTICIPANTES: Tabela que informa os alunos que ja possuem auxilios.
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+b) Campo FK_ALUNO: Armazena as matriculas que se encaixam na seleção.
+
+Tabela PENDENCIA_DOCUMENTO: Tabela que informa os alunos que possuem pendencia com o setor de assistencia. 
+a) Campo ID: Armazena o valor em inteiro para futuras seleções e relacionamentos.
+a) Campo: FK_ALUNO: Armazena o inteiro de relacioamento com o aluno que se encaixa na seleção prescrita pela tabela. 
+b) Campo: FK_TIPO_DOCUMENTOS: Armazena as matriculas que se encaixam na seleção.
