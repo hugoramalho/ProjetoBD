@@ -205,7 +205,7 @@ Link para o resto do rascunho: https://github.com/projetobdifes01/ProjetoBD/blob
 
 ### 7	MODELO FÍSICO<br>
         a) inclusão das instruções de criacão das estruturas DDL 
-        Link do Modelo Lógico: https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
+        Link do Modelo Físico: https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
 
 ### 8	INSERT APLICADO NAS TABELAS DO BANCO DE DADOS<br>
 #### 8.1 DETALHAMENTO DAS INFORMAÇÕES
