@@ -381,6 +381,7 @@ https://github.com/projetobdifes01/ProjetoBD/blob/master/BD.sql
         (Em Dump Options #1 Habilitar opções Don't Save Owner e Privilege)
     b) antes de postar o arquivo no git o mesmo deve ser testado/restaurado por outro grupo de alunos/dupla
     c) informar aqui o grupo de alunos/dupla que realizou o teste.
+    [Mani Mobile]: [Marcelo Passamai Mendes, João Pedro Vieira] 
     
 ### OBSERVAÇÕES IMPORTANTES
 
