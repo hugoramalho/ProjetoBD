@@ -2,7 +2,7 @@
 update contatos set descricao_contato='marcio@live.com' where descricao_contato='marcio@gmail.com';
 update documentos set numero_documento='111111' where numero_documento='098765';
 update renda_familiar set renda_mensal=500 where id=5;
-delete from data_nascimento where data_nascimento = '1960-10-13';
+delete from parentesco where grau_parentesco = 'TIO'
 delete from interessados_participar where fk_aluno = 20151010;
 delete from disciplinas where disciplina = 'CALCULO 2';
 /*9.6	CONSULTAS COM JUNÇÃO E ORDENAÇÃO (Todas Junções)*/
